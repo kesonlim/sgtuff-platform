@@ -1,5 +1,5 @@
 {
-  "name": "sgtuff-mall-scraper",
+  "name": "sgtuff-mall-tracker",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "vite",
     "server": "node server/index.js",
-    "build": "vite build",
+    "build": "vite build && node buildInlineApp.js",
     "preview": "vite preview"
   },
   "dependencies": {
