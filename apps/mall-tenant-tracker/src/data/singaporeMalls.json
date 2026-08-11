@@ -1,0 +1,301 @@
+[
+  {
+    "id": "plaza-singapura",
+    "name": "Plaza Singapura",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "MUJI", "category": "Home & Lifestyle", "unit": "#01-10" },
+      { "name": "Uniqlo", "category": "Fashion", "unit": "#02-15" },
+      { "name": "Haidilao Hot Pot", "category": "Dining / F&B", "unit": "#04-01" },
+      { "name": "Sephora", "category": "Beauty & Wellness", "unit": "#01-22" },
+      { "name": "Best Denki", "category": "Electronics & IT", "unit": "#03-25" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Gentle Monster", "category": "Fashion", "unit": "#01-18" },
+      { "name": "Heytea", "category": "Dining / F&B", "unit": "#01-K2" }
+    ],
+    "sampleExitedAugust": ["Best Denki"]
+  },
+  {
+    "id": "raffles-city",
+    "name": "Raffles City Singapore",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "Dyson Demo Store", "category": "Electronics & IT", "unit": "#01-12" },
+      { "name": "Maison Francis Kurkdjian", "category": "Beauty & Wellness", "unit": "#01-25" },
+      { "name": "Prego", "category": "Dining / F&B", "unit": "#01-30" },
+      { "name": "TWG Tea", "category": "Dining / F&B", "unit": "#01-15" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Acqua di Parma", "category": "Beauty & Wellness", "unit": "#01-28" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "imm-outlet",
+    "name": "IMM Building (Outlet Mall)",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "Nike Factory Store", "category": "Fashion & Sports", "unit": "#02-14" },
+      { "name": "Adidas Outlet", "category": "Fashion & Sports", "unit": "#02-10" },
+      { "name": "Coach Outlet", "category": "Fashion", "unit": "#01-104" },
+      { "name": "Fila Outlet", "category": "Fashion", "unit": "#02-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Puma Outlet Store", "category": "Fashion & Sports", "unit": "#02-33" }
+    ],
+    "sampleExitedAugust": ["Fila Outlet"]
+  },
+  {
+    "id": "westgate",
+    "name": "Westgate",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "Isetan", "category": "Department Store", "unit": "#01-01" },
+      { "name": "Tim Ho Wan", "category": "Dining / F&B", "unit": "#01-13" },
+      { "name": "Borders Bookstore", "category": "Books & Gifts", "unit": "#01-40" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Shake Shack", "category": "Dining / F&B", "unit": "#01-20" }
+    ],
+    "sampleExitedAugust": ["Borders Bookstore"]
+  },
+  {
+    "id": "bugis-plus",
+    "name": "Bugis+",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "Uniqlo Flagship", "category": "Fashion", "unit": "#01-15" },
+      { "name": "Pull&Bear", "category": "Fashion", "unit": "#01-08" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "BERSHKA", "category": "Fashion", "unit": "#02-02" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "bugis-junction",
+    "name": "Bugis Junction",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "BHG Department Store", "category": "Department Store", "unit": "#01-100" },
+      { "name": "Kinokuniya", "category": "Books & Gifts", "unit": "#03-09" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Pop Mart Flagship", "category": "Lifestyle & Toys", "unit": "#01-24" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "funan",
+    "name": "Funan",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "Wild Rice Theatre", "category": "Entertainment", "unit": "#04-01" },
+      { "name": "Taobao Store", "category": "Home & Lifestyle", "unit": "#02-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Razer Concept Store", "category": "Electronics & IT", "unit": "#01-11" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "tampines-mall",
+    "name": "Tampines Mall",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "Isetan Tampines", "category": "Department Store", "unit": "#01-01" },
+      { "name": "Din Tai Fung", "category": "Dining / F&B", "unit": "#02-13" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Sushiro Tampines", "category": "Dining / F&B", "unit": "#01-22" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "junction-8",
+    "name": "Junction 8",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "FairPrice Finest", "category": "Supermarket", "unit": "#B1-01" },
+      { "name": "Golden Village", "category": "Entertainment", "unit": "#04-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Bacha Coffee Boutique", "category": "Dining / F&B", "unit": "#01-12" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "bedok-mall",
+    "name": "Bedok Mall",
+    "reitCategory": "CapitaLand",
+    "sampleStoresJuly": [
+      { "name": "FairPrice", "category": "Supermarket", "unit": "#B2-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Subway", "category": "Dining / F&B", "unit": "#B1-15" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "waterway-point",
+    "name": "Waterway Point",
+    "reitCategory": "Frasers Property",
+    "sampleStoresJuly": [
+      { "name": "NTUC FairPrice Finest", "category": "Supermarket", "unit": "#B2-24" },
+      { "name": "Shaw Theatres", "category": "Entertainment", "unit": "#B2-11" },
+      { "name": "H&M", "category": "Fashion", "unit": "#01-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Don Don Donki", "category": "Supermarket / Lifestyle", "unit": "#B1-10" }
+    ],
+    "sampleExitedAugust": ["H&M"]
+  },
+  {
+    "id": "northpoint-city",
+    "name": "Northpoint City",
+    "reitCategory": "Frasers Property",
+    "sampleStoresJuly": [
+      { "name": "Malaysia Boleh!", "category": "Dining / F&B", "unit": "#B1-150" },
+      { "name": "Harvey Norman", "category": "Electronics & IT", "unit": "#02-22" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "海底捞 Haidilao Yishun", "category": "Dining / F&B", "unit": "#01-44" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "causeway-point",
+    "name": "Causeway Point",
+    "reitCategory": "Frasers Property",
+    "sampleStoresJuly": [
+      { "name": "Metro Department Store", "category": "Department Store", "unit": "#01-18" },
+      { "name": "Cathay Cineplexes", "category": "Entertainment", "unit": "#07-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Luckin Coffee", "category": "Dining / F&B", "unit": "#01-05" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "tampines-1",
+    "name": "Tampines 1",
+    "reitCategory": "Frasers Property",
+    "sampleStoresJuly": [
+      { "name": "Cold Storage", "category": "Supermarket", "unit": "#B1-01" },
+      { "name": "Muji", "category": "Home & Lifestyle", "unit": "#03-10" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Love, Bonito", "category": "Fashion", "unit": "#02-08" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "changi-city-point",
+    "name": "Changi City Point",
+    "reitCategory": "Frasers Property",
+    "sampleStoresJuly": [
+      { "name": "Adidas Outlet", "category": "Fashion & Sports", "unit": "#01-15" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Under Armour Outlet", "category": "Fashion & Sports", "unit": "#01-22" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "century-square",
+    "name": "Century Square",
+    "reitCategory": "Frasers Property",
+    "sampleStoresJuly": [
+      { "name": "Filmgarde Cineplex", "category": "Entertainment", "unit": "#05-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "National Library Bureau Tampines", "category": "Services", "unit": "#04-01" }
+    ],
+    "sampleExitedAugust": ["Filmgarde Cineplex"]
+  },
+  {
+    "id": "vivocity",
+    "name": "VivoCity",
+    "reitCategory": "Mapletree",
+    "sampleStoresJuly": [
+      { "name": "Tanglin Market Place", "category": "Supermarket", "unit": "#B2-23" },
+      { "name": "Zara Flagship", "category": "Fashion", "unit": "#01-28" },
+      { "name": "Golden Village VivoCity", "category": "Entertainment", "unit": "#02-30" },
+      { "name": "Best Denki VivoCity", "category": "Electronics & IT", "unit": "#02-05" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Pop Mart VivoCity Global", "category": "Lifestyle & Toys", "unit": "#01-15" },
+      { "name": "Bacha Coffee VivoCity", "category": "Dining / F&B", "unit": "#01-09" }
+    ],
+    "sampleExitedAugust": ["Best Denki VivoCity"]
+  },
+  {
+    "id": "313-somerset",
+    "name": "313@somerset",
+    "reitCategory": "Lendlease",
+    "sampleStoresJuly": [
+      { "name": "Forever 21", "category": "Fashion", "unit": "#01-01" },
+      { "name": "Marché Mövenpick", "category": "Dining / F&B", "unit": "#01-32" },
+      { "name": "Food Republic 313", "category": "Dining / F&B", "unit": "#05-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Chagee Somerset", "category": "Dining / F&B", "unit": "#01-15" }
+    ],
+    "sampleExitedAugust": ["Forever 21"]
+  },
+  {
+    "id": "jem",
+    "name": "JEM",
+    "reitCategory": "Lendlease",
+    "sampleStoresJuly": [
+      { "name": "Robinsons Department Store", "category": "Department Store", "unit": "#01-01" },
+      { "name": "IKEA Jurong", "category": "Home & Furnishing", "unit": "#02-01" },
+      { "name": "FairPrice Xtra JEM", "category": "Supermarket", "unit": "#B1-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Kopitiam Food Hall JEM", "category": "Dining / F&B", "unit": "#05-02" }
+    ],
+    "sampleExitedAugust": ["Robinsons Department Store"]
+  },
+  {
+    "id": "payar-lebar-quarter",
+    "name": "Paya Lebar Quarter (PLQ)",
+    "reitCategory": "Lendlease",
+    "sampleStoresJuly": [
+      { "name": "Shaw Theatres PLQ", "category": "Entertainment", "unit": "#05-01" },
+      { "name": "FairPrice Finest PLQ", "category": "Supermarket", "unit": "#B2-09" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Paradise Dynasty PLQ", "category": "Dining / F&B", "unit": "#03-08" }
+    ],
+    "sampleExitedAugust": []
+  },
+  {
+    "id": "suntec-city",
+    "name": "Suntec City Mall",
+    "reitCategory": "Suntec REIT",
+    "sampleStoresJuly": [
+      { "name": "Giant Hypermarket", "category": "Supermarket", "unit": "#B1-15" },
+      { "name": "SuperPark Singapore", "category": "Entertainment & Sports", "unit": "#02-477" },
+      { "name": "True Fitness Suntec", "category": "Beauty & Wellness", "unit": "#03-318" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Kiztopia Suntec", "category": "Entertainment & Kids", "unit": "#01-09" }
+    ],
+    "sampleExitedAugust": ["Giant Hypermarket"]
+  },
+  {
+    "id": "city-square-mall",
+    "name": "City Square Mall",
+    "reitCategory": "CDL & Others",
+    "sampleStoresJuly": [
+      { "name": "Don Don Donki City Square", "category": "Supermarket / Lifestyle", "unit": "#B2-01" },
+      { "name": "Decathlon City Square", "category": "Sports & Outdoor", "unit": "#02-01" }
+    ],
+    "sampleJoinedAugust": [
+      { "name": "Saizeriya City Square", "category": "Dining / F&B", "unit": "#B1-12" }
+    ],
+    "sampleExitedAugust": []
+  }
+]

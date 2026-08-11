@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: kesonlim/sgtuff-platform
+  branch: main
+
+media_folder: "apps/main-site/public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "SGTUFF Blog & Retail Reports"
+    folder: "apps/main-site/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Category", name: "category", widget: "select", options: ["Retail Movement Report", "Fair Tenancy", "Industry Insights", "Member News"] }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Website Pages"
+    folder: "apps/main-site/content/pages"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

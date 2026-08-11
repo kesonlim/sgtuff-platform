@@ -1,0 +1,15 @@
+{
+  "name": "sgtuff-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unified SGTUFF Platform Monorepo - Main Site & Retail Tenant Tracker on Cloudflare Pages",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build:tracker": "cd apps/mall-tenant-tracker && npm run build && node buildInlineApp.js",
+    "build:mainsite": "cd apps/main-site && npm run build",
+    "test": "cd apps/mall-tenant-tracker && node testEngine.js"
+  }
+}

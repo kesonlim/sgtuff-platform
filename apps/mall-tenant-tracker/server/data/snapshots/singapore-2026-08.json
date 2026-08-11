@@ -1,0 +1,1467 @@
+{
+  "month": "2026-08",
+  "region": "Singapore Portfolio",
+  "createdAt": "2026-08-09T02:01:32.183Z",
+  "malls": {
+    "plaza-singapura": {
+      "mallId": "plaza-singapura",
+      "mallName": "Plaza Singapura",
+      "region": "Central",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 20,
+      "stores": [
+        {
+          "name": "MUJI",
+          "unit": "#01-10 to 22",
+          "category": "Lifestyle & Home"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#02-16 to 20",
+          "category": "Fashion"
+        },
+        {
+          "name": "Golden Village",
+          "unit": "#07-01",
+          "category": "Entertainment"
+        },
+        {
+          "name": "Spotlight",
+          "unit": "#05-11",
+          "category": "Craft & Home"
+        },
+        {
+          "name": "Sephora",
+          "unit": "#01-56",
+          "category": "Beauty & Cosmetics"
+        },
+        {
+          "name": "Haidilao Hot Pot",
+          "unit": "#04-01 to 04",
+          "category": "F&B"
+        },
+        {
+          "name": "Tim Ho Wan",
+          "unit": "#01-29",
+          "category": "F&B"
+        },
+        {
+          "name": "Matchaya",
+          "unit": "#01-08",
+          "category": "F&B (Matcha & Sweets)"
+        },
+        {
+          "name": "Cold Storage Finest",
+          "unit": "#B2-15",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Daiso",
+          "unit": "#05-01",
+          "category": "Lifestyle"
+        },
+        {
+          "name": "Challenger",
+          "unit": "#04-12",
+          "category": "Electronics & Tech"
+        },
+        {
+          "name": "Kopitiam Food Hall",
+          "unit": "#06-15",
+          "category": "F&B"
+        },
+        {
+          "name": "Starbucks",
+          "unit": "#01-12",
+          "category": "F&B Coffee"
+        },
+        {
+          "name": "Din Tai Fung",
+          "unit": "#02-32",
+          "category": "F&B"
+        },
+        {
+          "name": "Charles & Keith",
+          "unit": "#01-44",
+          "category": "Fashion & Footwear"
+        },
+        {
+          "name": "Suki-Ya",
+          "unit": "#04-62",
+          "category": "F&B"
+        },
+        {
+          "name": "Guardian",
+          "unit": "#B2-02",
+          "category": "Health & Pharmacy"
+        },
+        {
+          "name": "Watsons",
+          "unit": "#B2-21",
+          "category": "Beauty & Pharmacy"
+        },
+        {
+          "name": "Pop Mart Flagship",
+          "unit": "#01-35",
+          "category": "Toys & Collectibles"
+        },
+        {
+          "name": "Gentle Monster",
+          "unit": "#01-38",
+          "category": "Eyewear & Fashion"
+        }
+      ]
+    },
+    "raffles-city": {
+      "mallId": "raffles-city",
+      "mallName": "Raffles City Singapore",
+      "region": "Central",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 15,
+      "stores": [
+        {
+          "name": "Chanel Beauty",
+          "unit": "#01-04",
+          "category": "Luxury & Beauty"
+        },
+        {
+          "name": "Diptyque",
+          "unit": "#01-05",
+          "category": "Fragrance & Lifestyle"
+        },
+        {
+          "name": "Acqua di Parma",
+          "unit": "#01-07",
+          "category": "Luxury Fragrance"
+        },
+        {
+          "name": "Prego",
+          "unit": "#01-22",
+          "category": "F&B Fine Dining"
+        },
+        {
+          "name": "Jaan by Kirk Westaway",
+          "unit": "#70-01",
+          "category": "Michelin F&B"
+        },
+        {
+          "name": "Marks & Spencer",
+          "unit": "#02-01 to 14",
+          "category": "Department Store & Food"
+        },
+        {
+          "name": "CS Fresh Gold",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "TWG Tea Salon",
+          "unit": "#01-16",
+          "category": "F&B Tea"
+        },
+        {
+          "name": "Tipsy Flamingo",
+          "unit": "#01-14A",
+          "category": "F&B Bistro Bar"
+        },
+        {
+          "name": "Venchi 1878",
+          "unit": "#01-37A",
+          "category": "Chocolates & Gelato"
+        },
+        {
+          "name": "Guerlain Boutique",
+          "unit": "#01-11",
+          "category": "Beauty"
+        },
+        {
+          "name": "Sandro",
+          "unit": "#01-26",
+          "category": "Fashion"
+        },
+        {
+          "name": "Maje",
+          "unit": "#01-27",
+          "category": "Fashion"
+        },
+        {
+          "name": "Sephora",
+          "unit": "#01-12 to 14",
+          "category": "Beauty"
+        },
+        {
+          "name": "Le Labo Fragrances",
+          "unit": "#01-28",
+          "category": "Beauty & Luxury"
+        }
+      ]
+    },
+    "imm": {
+      "mallId": "imm",
+      "mallName": "IMM Outlet Mall",
+      "region": "West",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 15,
+      "stores": [
+        {
+          "name": "Nike Factory Store",
+          "unit": "#02-50",
+          "category": "Outlet Sportswear"
+        },
+        {
+          "name": "Adidas Outlet",
+          "unit": "#02-14",
+          "category": "Outlet Sportswear"
+        },
+        {
+          "name": "Coach Outlet",
+          "unit": "#01-104",
+          "category": "Outlet Luxury"
+        },
+        {
+          "name": "Kate Spade New York Outlet",
+          "unit": "#01-106",
+          "category": "Outlet Luxury"
+        },
+        {
+          "name": "Michael Kors Outlet",
+          "unit": "#01-125",
+          "category": "Outlet Luxury"
+        },
+        {
+          "name": "Under Armour Outlet",
+          "unit": "#02-03",
+          "category": "Outlet Sportswear"
+        },
+        {
+          "name": "Puma Outlet",
+          "unit": "#02-10",
+          "category": "Outlet Sportswear"
+        },
+        {
+          "name": "Asics Outlet",
+          "unit": "#02-12",
+          "category": "Outlet Sportswear"
+        },
+        {
+          "name": "Giant Hypermarket",
+          "unit": "#01-100",
+          "category": "Hypermarket"
+        },
+        {
+          "name": "Hai Di Lao",
+          "unit": "#03-01",
+          "category": "F&B"
+        },
+        {
+          "name": "Best Denki Outlet",
+          "unit": "#03-33",
+          "category": "Electronics"
+        },
+        {
+          "name": "Furla Outlet",
+          "unit": "#01-121",
+          "category": "Outlet Fashion"
+        },
+        {
+          "name": "Calvin Klein Outlet",
+          "unit": "#01-120",
+          "category": "Outlet Fashion"
+        },
+        {
+          "name": "Tommy Hilfiger Outlet",
+          "unit": "#01-118",
+          "category": "Outlet Fashion"
+        },
+        {
+          "name": "Chow Tai Fook Outlet",
+          "unit": "#01-67",
+          "category": "Jewellery"
+        }
+      ]
+    },
+    "westgate": {
+      "mallId": "westgate",
+      "mallName": "Westgate",
+      "region": "West",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 12,
+      "stores": [
+        {
+          "name": "Isetan Department Store",
+          "unit": "#B1-01 to #02-01",
+          "category": "Department Store"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#02-27",
+          "category": "Fashion"
+        },
+        {
+          "name": "Tim Ho Wan",
+          "unit": "#01-13",
+          "category": "F&B"
+        },
+        {
+          "name": "Shake Shack",
+          "unit": "#01-20",
+          "category": "F&B Burger"
+        },
+        {
+          "name": "Lady M",
+          "unit": "#02-07",
+          "category": "F&B Bakery & Cakes"
+        },
+        {
+          "name": "Beauty in The Pot",
+          "unit": "#03-10",
+          "category": "F&B Hotpot"
+        },
+        {
+          "name": "Nespresso Boutique",
+          "unit": "#01-14",
+          "category": "Lifestyle & Coffee"
+        },
+        {
+          "name": "Brotzeit German Bier Bar",
+          "unit": "#01-04",
+          "category": "F&B Bistro"
+        },
+        {
+          "name": "Lululemon",
+          "unit": "#01-16",
+          "category": "Activewear"
+        },
+        {
+          "name": "GENKI SUSHI",
+          "unit": "#03-02",
+          "category": "F&B Japanese"
+        },
+        {
+          "name": "Subway",
+          "unit": "#B1-K07",
+          "category": "F&B Fast Food"
+        },
+        {
+          "name": "Toast Box",
+          "unit": "#01-05",
+          "category": "F&B Cafe"
+        }
+      ]
+    },
+    "bugis-junction": {
+      "mallId": "bugis-junction",
+      "mallName": "Bugis Junction",
+      "region": "Central",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 10,
+      "stores": [
+        {
+          "name": "BHG Department Store",
+          "unit": "#01-100 to #03-100",
+          "category": "Department Store"
+        },
+        {
+          "name": "Kinokuniya Book Stores",
+          "unit": "#03-09",
+          "category": "Books & Stationery"
+        },
+        {
+          "name": "Levi's",
+          "unit": "#01-30",
+          "category": "Fashion & Denim"
+        },
+        {
+          "name": "Champion",
+          "unit": "#01-11",
+          "category": "Streetwear"
+        },
+        {
+          "name": "Pull&Bear",
+          "unit": "#01-18",
+          "category": "Fashion"
+        },
+        {
+          "name": "Stradivarius",
+          "unit": "#01-19",
+          "category": "Fashion"
+        },
+        {
+          "name": "Intercontinental Dining",
+          "unit": "#01-01",
+          "category": "F&B"
+        },
+        {
+          "name": "Ajisen Ramen",
+          "unit": "#01-15",
+          "category": "F&B"
+        },
+        {
+          "name": "Cold Storage",
+          "unit": "#B1-18",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Kpop Merch Hub",
+          "unit": "#01-25",
+          "category": "Pop Culture & Gifts"
+        }
+      ]
+    },
+    "bugis-plus": {
+      "mallId": "bugis-plus",
+      "mallName": "Bugis+",
+      "region": "Central",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 14,
+      "stores": [
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Ya Kun Kaya Toast",
+          "unit": "#01-02",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "McDonald's",
+          "unit": "#01-15",
+          "category": "F&B Fast Food"
+        },
+        {
+          "name": "Watsons",
+          "unit": "#B1-12",
+          "category": "Beauty & Pharmacy"
+        },
+        {
+          "name": "Guardian",
+          "unit": "#B1-14",
+          "category": "Pharmacy"
+        },
+        {
+          "name": "BreadTalk",
+          "unit": "#01-08",
+          "category": "F&B Bakery"
+        },
+        {
+          "name": "Toast Box",
+          "unit": "#01-09",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "Giordano",
+          "unit": "#01-22",
+          "category": "Fashion"
+        },
+        {
+          "name": "Bossini",
+          "unit": "#01-24",
+          "category": "Fashion"
+        },
+        {
+          "name": "Challenger",
+          "unit": "#03-10",
+          "category": "Electronics"
+        },
+        {
+          "name": "Popular Bookstore",
+          "unit": "#04-01",
+          "category": "Books & Stationery"
+        },
+        {
+          "name": "Sushiro",
+          "unit": "#02-18",
+          "category": "F&B Japanese"
+        },
+        {
+          "name": "LiHO Tea",
+          "unit": "#01-K02",
+          "category": "F&B Bubble Tea"
+        },
+        {
+          "name": "KOI Thé",
+          "unit": "#01-K05",
+          "category": "F&B Bubble Tea"
+        }
+      ]
+    },
+    "funan": {
+      "mallId": "funan",
+      "mallName": "Funan",
+      "region": "Central",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 9,
+      "stores": [
+        {
+          "name": "Challenger Flagship",
+          "unit": "#04-01 to 05",
+          "category": "Tech & Gaming"
+        },
+        {
+          "name": "Brompton Junction",
+          "unit": "#01-26",
+          "category": "Cycling & Lifestyle"
+        },
+        {
+          "name": "Wild Rice Theatre",
+          "unit": "#04-08",
+          "category": "Arts & Culture"
+        },
+        {
+          "name": "Climb Central",
+          "unit": "#B2-19",
+          "category": "Sports & Bouldering"
+        },
+        {
+          "name": "Beyond The Vines",
+          "unit": "#02-08",
+          "category": "Design & Fashion"
+        },
+        {
+          "name": "Nasty Cookie",
+          "unit": "#02-35",
+          "category": "F&B Bakery"
+        },
+        {
+          "name": "Afuri Ramen",
+          "unit": "#B1-29",
+          "category": "F&B Japanese"
+        },
+        {
+          "name": "Godmama",
+          "unit": "#01-07",
+          "category": "Peranakan F&B"
+        },
+        {
+          "name": "Dyson Demo Store",
+          "unit": "#01-10",
+          "category": "Tech & Electronics"
+        }
+      ]
+    },
+    "tampines-mall": {
+      "mallId": "tampines-mall",
+      "mallName": "Tampines Mall",
+      "region": "East",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 14,
+      "stores": [
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Ya Kun Kaya Toast",
+          "unit": "#01-02",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "McDonald's",
+          "unit": "#01-15",
+          "category": "F&B Fast Food"
+        },
+        {
+          "name": "Watsons",
+          "unit": "#B1-12",
+          "category": "Beauty & Pharmacy"
+        },
+        {
+          "name": "Guardian",
+          "unit": "#B1-14",
+          "category": "Pharmacy"
+        },
+        {
+          "name": "BreadTalk",
+          "unit": "#01-08",
+          "category": "F&B Bakery"
+        },
+        {
+          "name": "Toast Box",
+          "unit": "#01-09",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "Giordano",
+          "unit": "#01-22",
+          "category": "Fashion"
+        },
+        {
+          "name": "Bossini",
+          "unit": "#01-24",
+          "category": "Fashion"
+        },
+        {
+          "name": "Challenger",
+          "unit": "#03-10",
+          "category": "Electronics"
+        },
+        {
+          "name": "Popular Bookstore",
+          "unit": "#04-01",
+          "category": "Books & Stationery"
+        },
+        {
+          "name": "Sushiro",
+          "unit": "#02-18",
+          "category": "F&B Japanese"
+        },
+        {
+          "name": "LiHO Tea",
+          "unit": "#01-K02",
+          "category": "F&B Bubble Tea"
+        },
+        {
+          "name": "KOI Thé",
+          "unit": "#01-K05",
+          "category": "F&B Bubble Tea"
+        }
+      ]
+    },
+    "junction-8": {
+      "mallId": "junction-8",
+      "mallName": "Junction 8",
+      "region": "North-Central",
+      "reitCategory": "CapitaLand",
+      "reit": "CapitaLand Integrated Commercial Trust",
+      "storeCount": 14,
+      "stores": [
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Ya Kun Kaya Toast",
+          "unit": "#01-02",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "McDonald's",
+          "unit": "#01-15",
+          "category": "F&B Fast Food"
+        },
+        {
+          "name": "Watsons",
+          "unit": "#B1-12",
+          "category": "Beauty & Pharmacy"
+        },
+        {
+          "name": "Guardian",
+          "unit": "#B1-14",
+          "category": "Pharmacy"
+        },
+        {
+          "name": "BreadTalk",
+          "unit": "#01-08",
+          "category": "F&B Bakery"
+        },
+        {
+          "name": "Toast Box",
+          "unit": "#01-09",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "Giordano",
+          "unit": "#01-22",
+          "category": "Fashion"
+        },
+        {
+          "name": "Bossini",
+          "unit": "#01-24",
+          "category": "Fashion"
+        },
+        {
+          "name": "Challenger",
+          "unit": "#03-10",
+          "category": "Electronics"
+        },
+        {
+          "name": "Popular Bookstore",
+          "unit": "#04-01",
+          "category": "Books & Stationery"
+        },
+        {
+          "name": "Sushiro",
+          "unit": "#02-18",
+          "category": "F&B Japanese"
+        },
+        {
+          "name": "LiHO Tea",
+          "unit": "#01-K02",
+          "category": "F&B Bubble Tea"
+        },
+        {
+          "name": "KOI Thé",
+          "unit": "#01-K05",
+          "category": "F&B Bubble Tea"
+        }
+      ]
+    },
+    "northpoint-city": {
+      "mallId": "northpoint-city",
+      "mallName": "Northpoint City",
+      "region": "North",
+      "reitCategory": "Frasers Property",
+      "reit": "Frasers Centrepoint Trust (FCT)",
+      "storeCount": 13,
+      "stores": [
+        {
+          "name": "Don Don Donki",
+          "unit": "#B1-06/07",
+          "category": "Supermarket & Japanese Food"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#01-08 to 12",
+          "category": "Fashion"
+        },
+        {
+          "name": "Courts Megastore",
+          "unit": "#02-21 to 24",
+          "category": "Electronics & Home"
+        },
+        {
+          "name": "Harvey Norman",
+          "unit": "#B1-121",
+          "category": "Electronics"
+        },
+        {
+          "name": "Din Tai Fung",
+          "unit": "#02-28",
+          "category": "F&B"
+        },
+        {
+          "name": "Monster Curry",
+          "unit": "#B1-51",
+          "category": "F&B"
+        },
+        {
+          "name": "Popular Bookstore",
+          "unit": "#03-11",
+          "category": "Books & Stationery"
+        },
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-12",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Decathlon Click & Collect",
+          "unit": "#01-105",
+          "category": "Sportswear"
+        },
+        {
+          "name": "Sushiro",
+          "unit": "#02-16 to 18",
+          "category": "F&B Japanese"
+        },
+        {
+          "name": "Timezone Arcade",
+          "unit": "#02-13",
+          "category": "Entertainment"
+        },
+        {
+          "name": "Scoop Wholefoods",
+          "unit": "#01-167",
+          "category": "Organic & Groceries"
+        },
+        {
+          "name": "Jollibee",
+          "unit": "#B2-12",
+          "category": "F&B Fast Food"
+        }
+      ]
+    },
+    "causeway-point": {
+      "mallId": "causeway-point",
+      "mallName": "Causeway Point",
+      "region": "North",
+      "reitCategory": "Frasers Property",
+      "reit": "Frasers Centrepoint Trust (FCT)",
+      "storeCount": 10,
+      "stores": [
+        {
+          "name": "Metro Department Store",
+          "unit": "#01-18/19",
+          "category": "Department Store"
+        },
+        {
+          "name": "Cathay Cineplexes",
+          "unit": "#07-01",
+          "category": "Cinema & Entertainment"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#02-21 to 23",
+          "category": "Fashion"
+        },
+        {
+          "name": "Courts",
+          "unit": "#04-19",
+          "category": "Electronics"
+        },
+        {
+          "name": "FairPrice Extra",
+          "unit": "#B1-31 to 33",
+          "category": "Hypermarket"
+        },
+        {
+          "name": "Challenger",
+          "unit": "#04-11",
+          "category": "Tech & Accessories"
+        },
+        {
+          "name": "海底捞 Haidilao",
+          "unit": "#05-01",
+          "category": "F&B Hotpot"
+        },
+        {
+          "name": "Swensen's",
+          "unit": "#02-35",
+          "category": "F&B Family Dining"
+        },
+        {
+          "name": "Cotton On",
+          "unit": "#01-14",
+          "category": "Fashion"
+        },
+        {
+          "name": "Nasty Cookie",
+          "unit": "#01-16",
+          "category": "F&B Bakery"
+        }
+      ]
+    },
+    "waterway-point": {
+      "mallId": "waterway-point",
+      "mallName": "Waterway Point",
+      "region": "North-East",
+      "reitCategory": "Frasers Property",
+      "reit": "Frasers Centrepoint Trust (FCT)",
+      "storeCount": 9,
+      "stores": [
+        {
+          "name": "Shaw Theatres IMAX",
+          "unit": "#B2-11",
+          "category": "Cinema"
+        },
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B2-32",
+          "category": "Supermarket"
+        },
+        {
+          "name": "H&M Flagship",
+          "unit": "#01-01 to 03",
+          "category": "Fashion"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#01-21",
+          "category": "Fashion"
+        },
+        {
+          "name": "Genki Sushi",
+          "unit": "#02-23",
+          "category": "F&B Japanese"
+        },
+        {
+          "name": "Best Denki",
+          "unit": "#B1-08",
+          "category": "Electronics"
+        },
+        {
+          "name": "Daiso Japan",
+          "unit": "#B1-09",
+          "category": "Lifestyle & Variety"
+        },
+        {
+          "name": "Guzman y Gomez",
+          "unit": "#01-K3",
+          "category": "F&B Mexican"
+        },
+        {
+          "name": "Gram Cafe & Pancakes",
+          "unit": "#01-64",
+          "category": "F&B Cafe"
+        }
+      ]
+    },
+    "nex": {
+      "mallId": "nex",
+      "mallName": "NEX Shopping Mall",
+      "region": "North-East",
+      "reitCategory": "Frasers Property",
+      "reit": "Frasers Centrepoint Trust (FCT)",
+      "storeCount": 10,
+      "stores": [
+        {
+          "name": "Takashimaya Simply Food / FairPrice Xtra",
+          "unit": "#03-42 to 50",
+          "category": "Hypermarket"
+        },
+        {
+          "name": "Isetan Department Store",
+          "unit": "#01-01 to #03-01",
+          "category": "Department Store"
+        },
+        {
+          "name": "Shaw Theatres NEX",
+          "unit": "#04-60",
+          "category": "Cinema"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#01-03",
+          "category": "Fashion"
+        },
+        {
+          "name": "Don Don Donki NEX",
+          "unit": "#B2-01 to 05",
+          "category": "Supermarket & Japanese"
+        },
+        {
+          "name": "Cotton On Kids",
+          "unit": "#01-18",
+          "category": "Fashion"
+        },
+        {
+          "name": "Challenger Flagship",
+          "unit": "#04-33",
+          "category": "Tech & Accessories"
+        },
+        {
+          "name": "Flippers Pancakes",
+          "unit": "#01-56",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "Beauty in The Pot",
+          "unit": "#02-01",
+          "category": "F&B Hotpot"
+        },
+        {
+          "name": "NEX Dog Park & SkyGarden",
+          "unit": "#04-01",
+          "category": "Pet & Leisure"
+        }
+      ]
+    },
+    "tampines-1": {
+      "mallId": "tampines-1",
+      "mallName": "Tampines 1",
+      "region": "East",
+      "reitCategory": "Frasers Property",
+      "reit": "Frasers Centrepoint Trust (FCT)",
+      "storeCount": 7,
+      "stores": [
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Popular Bookstore",
+          "unit": "#03-01",
+          "category": "Stationery & Books"
+        },
+        {
+          "name": "Toast Box",
+          "unit": "#01-05",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "Watsons",
+          "unit": "#B1-10",
+          "category": "Pharmacy & Beauty"
+        },
+        {
+          "name": "Ya Kun Kaya Toast",
+          "unit": "#01-02",
+          "category": "F&B"
+        },
+        {
+          "name": "McDonald's",
+          "unit": "#01-12",
+          "category": "F&B Fast Food"
+        },
+        {
+          "name": "Giordano",
+          "unit": "#01-20",
+          "category": "Fashion"
+        }
+      ]
+    },
+    "tiong-bahru-plaza": {
+      "mallId": "tiong-bahru-plaza",
+      "mallName": "Tiong Bahru Plaza",
+      "region": "Central",
+      "reitCategory": "Frasers Property",
+      "reit": "Frasers Centrepoint Trust (FCT)",
+      "storeCount": 7,
+      "stores": [
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Popular Bookstore",
+          "unit": "#03-01",
+          "category": "Stationery & Books"
+        },
+        {
+          "name": "Toast Box",
+          "unit": "#01-05",
+          "category": "F&B Cafe"
+        },
+        {
+          "name": "Watsons",
+          "unit": "#B1-10",
+          "category": "Pharmacy & Beauty"
+        },
+        {
+          "name": "Ya Kun Kaya Toast",
+          "unit": "#01-02",
+          "category": "F&B"
+        },
+        {
+          "name": "McDonald's",
+          "unit": "#01-12",
+          "category": "F&B Fast Food"
+        },
+        {
+          "name": "Giordano",
+          "unit": "#01-20",
+          "category": "Fashion"
+        }
+      ]
+    },
+    "vivocity": {
+      "mallId": "vivocity",
+      "mallName": "VivoCity Singapore",
+      "region": "South / HarbourFront",
+      "reitCategory": "Mapletree",
+      "reit": "Mapletree Pan Asia Commercial Trust (MPACT)",
+      "storeCount": 16,
+      "stores": [
+        {
+          "name": "Golden Village VivoCity IMAX",
+          "unit": "#02-30",
+          "category": "Entertainment & Cinema"
+        },
+        {
+          "name": "FairPrice Xtra Hypermarket",
+          "unit": "#B2-23",
+          "category": "Hypermarket"
+        },
+        {
+          "name": "ZARA Flagship",
+          "unit": "#01-28 to 34",
+          "category": "Fashion"
+        },
+        {
+          "name": "Uniqlo Megastore",
+          "unit": "#01-78 to 82",
+          "category": "Fashion"
+        },
+        {
+          "name": "Tango / National Geographic Store",
+          "unit": "#01-164",
+          "category": "Lifestyle & Apparel"
+        },
+        {
+          "name": "Lululemon Flagship",
+          "unit": "#01-108",
+          "category": "Activewear"
+        },
+        {
+          "name": "Nike Rise Flagship",
+          "unit": "#01-72 to 74",
+          "category": "Sportswear"
+        },
+        {
+          "name": "Adidas Brand Centre",
+          "unit": "#01-73",
+          "category": "Sportswear"
+        },
+        {
+          "name": "Sephora VivoCity",
+          "unit": "#01-177",
+          "category": "Beauty & Cosmetics"
+        },
+        {
+          "name": "Food Republic Food Street",
+          "unit": "#03-01",
+          "category": "F&B Hawker Heritage"
+        },
+        {
+          "name": "Hai Di Lao Hotpot",
+          "unit": "#03-09",
+          "category": "F&B"
+        },
+        {
+          "name": "Bacha Coffee VivoCity",
+          "unit": "#01-15',",
+          "category": "F&B Luxury Coffee"
+        },
+        {
+          "name": "Shake Shack VivoCity",
+          "unit": "#01-31",
+          "category": "F&B Burger"
+        },
+        {
+          "name": "Matchaya Specialty Matcha",
+          "unit": "#01-149",
+          "category": "F&B Desserts"
+        },
+        {
+          "name": "Marché Mövenpick",
+          "unit": "#03-14",
+          "category": "F&B Swiss Dining"
+        },
+        {
+          "name": "Maison Margiela Fragrance",
+          "unit": "#01-10",
+          "category": "Luxury Beauty"
+        }
+      ]
+    },
+    "313-somerset": {
+      "mallId": "313-somerset",
+      "mallName": "313@somerset",
+      "region": "Central / Orchard",
+      "reitCategory": "Lendlease",
+      "reit": "Lendlease Global Commercial REIT",
+      "storeCount": 8,
+      "stores": [
+        {
+          "name": "ZARA",
+          "unit": "#01-14 to 20",
+          "category": "Fashion"
+        },
+        {
+          "name": "PUMA Select",
+          "unit": "#01-12",
+          "category": "Streetwear"
+        },
+        {
+          "name": "Love, Bonito Flagship",
+          "unit": "#02-16 to 21",
+          "category": "Fashion"
+        },
+        {
+          "name": "Marché Mövenpick 313",
+          "unit": "#01-29",
+          "category": "F&B European"
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "unit": "#01-18",
+          "category": "F&B"
+        },
+        {
+          "name": "Privé 313",
+          "unit": "#01-28",
+          "category": "F&B Bistro Bar"
+        },
+        {
+          "name": "Bacha Coffee 313",
+          "unit": "#01-15",
+          "category": "F&B Luxury"
+        },
+        {
+          "name": "Stylenanda 3CE",
+          "unit": "#01-01",
+          "category": "Beauty & Fashion"
+        }
+      ]
+    },
+    "jem": {
+      "mallId": "jem",
+      "mallName": "JEM",
+      "region": "West",
+      "reitCategory": "Lendlease",
+      "reit": "Lendlease Global Commercial REIT",
+      "storeCount": 8,
+      "stores": [
+        {
+          "name": "IKEA Jurong (Digital Store)",
+          "unit": "#02-12 to 16",
+          "category": "Home & Furnishing"
+        },
+        {
+          "name": "FairPrice Xtra JEM",
+          "unit": "#B1-01",
+          "category": "Hypermarket"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#02-27 to 31",
+          "category": "Fashion"
+        },
+        {
+          "name": "MUJI JEM",
+          "unit": "#04-33 to 37",
+          "category": "Lifestyle & Home"
+        },
+        {
+          "name": "Don Don Donki JEM",
+          "unit": "#02-24 to 26",
+          "category": "Supermarket & F&B"
+        },
+        {
+          "name": "Kinokuniya Bookstore",
+          "unit": "#04-23",
+          "category": "Books & Gifts"
+        },
+        {
+          "name": "Din Tai Fung",
+          "unit": "#02-32",
+          "category": "F&B"
+        },
+        {
+          "name": "Golden Village JEM",
+          "unit": "#05-01",
+          "category": "Cinema & Entertainment"
+        }
+      ]
+    },
+    "plq-mall": {
+      "mallId": "plq-mall",
+      "mallName": "Paya Lebar Quarter (PLQ Mall)",
+      "region": "East",
+      "reitCategory": "Lendlease",
+      "reit": "Lendlease Global Commercial REIT",
+      "storeCount": 7,
+      "stores": [
+        {
+          "name": "Shaw Theatres PLQ",
+          "unit": "#05-01",
+          "category": "Cinema"
+        },
+        {
+          "name": "FairPrice Finest PLQ",
+          "unit": "#B2-09",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Uniqlo PLQ",
+          "unit": "#01-01 to 04",
+          "category": "Fashion"
+        },
+        {
+          "name": "Popular Bookstore",
+          "unit": "#03-11",
+          "category": "Books & Stationery"
+        },
+        {
+          "name": "Joy Luck Teahouse",
+          "unit": "#01-K1",
+          "category": "F&B Teahouse"
+        },
+        {
+          "name": "Haakon Superfoods",
+          "unit": "#01-34",
+          "category": "F&B Health"
+        },
+        {
+          "name": "Komoro Ramen",
+          "unit": "#B2-18",
+          "category": "F&B Japanese"
+        }
+      ]
+    },
+    "suntec-city": {
+      "mallId": "suntec-city",
+      "mallName": "Suntec City",
+      "region": "Central / Marina",
+      "reitCategory": "Suntec REIT",
+      "reit": "Suntec REIT",
+      "storeCount": 10,
+      "stores": [
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Don Don Donki",
+          "unit": "#B1-15 to 20",
+          "category": "Japanese Groceries & F&B"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#01-10 to 14",
+          "category": "Fashion"
+        },
+        {
+          "name": "Din Tai Fung",
+          "unit": "#02-18",
+          "category": "F&B"
+        },
+        {
+          "name": "海底捞 Haidilao",
+          "unit": "#03-01",
+          "category": "F&B Hotpot"
+        },
+        {
+          "name": "Challenger",
+          "unit": "#03-15",
+          "category": "Tech & Gaming"
+        },
+        {
+          "name": "Pop Mart Flagship",
+          "unit": "#01-25",
+          "category": "Pop Culture & Collectibles"
+        },
+        {
+          "name": "Sephora",
+          "unit": "#01-08",
+          "category": "Beauty & Cosmetics"
+        },
+        {
+          "name": "Matchaya Matcha Sweets",
+          "unit": "#01-K2",
+          "category": "F&B Desserts"
+        },
+        {
+          "name": "Anker Innovation Store",
+          "unit": "#B1-K05",
+          "category": "Tech Accessories"
+        }
+      ]
+    },
+    "city-square-mall": {
+      "mallId": "city-square-mall",
+      "mallName": "City Square Mall",
+      "region": "Central",
+      "reitCategory": "CDL & Others",
+      "reit": "City Developments Limited (CDL)",
+      "storeCount": 10,
+      "stores": [
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Don Don Donki",
+          "unit": "#B1-15 to 20",
+          "category": "Japanese Groceries & F&B"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#01-10 to 14",
+          "category": "Fashion"
+        },
+        {
+          "name": "Din Tai Fung",
+          "unit": "#02-18",
+          "category": "F&B"
+        },
+        {
+          "name": "海底捞 Haidilao",
+          "unit": "#03-01",
+          "category": "F&B Hotpot"
+        },
+        {
+          "name": "Challenger",
+          "unit": "#03-15",
+          "category": "Tech & Gaming"
+        },
+        {
+          "name": "Pop Mart Flagship",
+          "unit": "#01-25",
+          "category": "Pop Culture & Collectibles"
+        },
+        {
+          "name": "Sephora",
+          "unit": "#01-08",
+          "category": "Beauty & Cosmetics"
+        },
+        {
+          "name": "Matchaya Matcha Sweets",
+          "unit": "#01-K2",
+          "category": "F&B Desserts"
+        },
+        {
+          "name": "Subway",
+          "unit": "#B1-K05",
+          "category": "F&B Fast Food"
+        }
+      ]
+    },
+    "marina-square": {
+      "mallId": "marina-square",
+      "mallName": "Marina Square",
+      "region": "Central / Marina",
+      "reitCategory": "CDL & Others",
+      "reit": "Singapore Land Group",
+      "storeCount": 10,
+      "stores": [
+        {
+          "name": "FairPrice Finest",
+          "unit": "#B1-01",
+          "category": "Supermarket"
+        },
+        {
+          "name": "Don Don Donki",
+          "unit": "#B1-15 to 20",
+          "category": "Japanese Groceries & F&B"
+        },
+        {
+          "name": "Uniqlo",
+          "unit": "#01-10 to 14",
+          "category": "Fashion"
+        },
+        {
+          "name": "Din Tai Fung",
+          "unit": "#02-18",
+          "category": "F&B"
+        },
+        {
+          "name": "海底捞 Haidilao",
+          "unit": "#03-01",
+          "category": "F&B Hotpot"
+        },
+        {
+          "name": "Challenger",
+          "unit": "#03-15",
+          "category": "Tech & Gaming"
+        },
+        {
+          "name": "Pop Mart Flagship",
+          "unit": "#01-25",
+          "category": "Pop Culture & Collectibles"
+        },
+        {
+          "name": "Sephora",
+          "unit": "#01-08",
+          "category": "Beauty & Cosmetics"
+        },
+        {
+          "name": "Matchaya Matcha Sweets",
+          "unit": "#01-K2",
+          "category": "F&B Desserts"
+        },
+        {
+          "name": "Subway",
+          "unit": "#B1-K05",
+          "category": "F&B Fast Food"
+        }
+      ]
+    }
+  }
+}

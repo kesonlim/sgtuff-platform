@@ -1,0 +1,38 @@
+name: Build & Deploy SGTUFF Retail Tracker to WPX Subdomain
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Standalone Bundle
+        run: |
+          npm run build
+          node buildInlineApp.js
+
+      - name: Deploy to WPX Subdomain via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER || '198.60.193.11' }}
+          username: ${{ secrets.FTP_USERNAME || 'sgtuff_deploy.ftp.diaperca' }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./public_html/mall-tenant-tracker.sgtuff.org.sg/
+          dangerous-clean-slate: false

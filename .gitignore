@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+dist_inline/
+
+# Environment & Temp Files
+.env
+.env.local
+*.log
+.DS_Store
+
+# Scratch / Temp Scripts
+scratch/
+sftp_batch.txt
