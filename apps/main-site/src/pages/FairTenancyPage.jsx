@@ -1,12 +1,57 @@
 import React from 'react';
 
-export default function FairTenancyPage({ onNavigate }) {
+export default function FairTenancyPage() {
   return (
-    <div className="scraped-page-container">
-      <div 
-        className="scraped-content-body"
-        dangerouslySetInnerHTML={{ __html: "<div class='flex_column av-al42r-f405a409d257126b2312b0be1c61917f av_one_full  avia-builder-el-0  avia-builder-el-no-sibling  first flex_column_div '     ><div  class='av-special-heading av-legsaq2i-14a29dc4098536afceac7810ff3ea394 av-special-heading-h1 blockquote modern-quote modern-centered  avia-builder-el-1  el_before_av_hr  avia-builder-el-first '><h1 class='av-special-heading-tag'  itemprop=\"headline\"  >FAIR TENANCY</h1><div class=\"special-heading-border\"><div class=\"special-heading-inner-border\"></div></div></div>\n<div  class='hr av-legsawvr-ed30e421a877cd88f087e06485a1a904 hr-invisible  avia-builder-el-2  el_after_av_heading  el_before_av_image '><span class='hr-inner '><span class=\"hr-inner-style\"></span></span></div>\n<div  class='avia-image-container av-legsu6ho-4b2e152ee8c5b45f09b2826abad6efc7 av-styling- avia-align-center  avia-builder-el-3  el_after_av_hr  el_before_av_hr '   itemprop=\"image\" itemscope=\"itemscope\" itemtype=\"https://schema.org/ImageObject\" ><div class=\"avia-image-container-inner\"><div class=\"avia-image-overlay-wrap\"><img fetchpriority=\"high\" decoding=\"async\" class='wp-image-220 avia-img-lazy-loading-not-220 avia_image ' src=\"#/wp-content/uploads/2023/02/Fair-tenancy-300x300.jpg\" alt='' title='Fair tenancy'  height=\"300\" width=\"300\"  itemprop=\"thumbnailUrl\" srcset=\"#/wp-content/uploads/2023/02/Fair-tenancy-300x300.jpg 300w, #/wp-content/uploads/2023/02/Fair-tenancy-80x80.jpg 80w, #/wp-content/uploads/2023/02/Fair-tenancy-36x36.jpg 36w, #/wp-content/uploads/2023/02/Fair-tenancy-180x180.jpg 180w, #/wp-content/uploads/2023/02/Fair-tenancy.jpg 600w\" sizes=\"(max-width: 300px) 100vw, 300px\" /></div></div></div>\n<div  class='hr av-legsufxo-ba5447e64cc8da3808b2911f3d7282ae hr-invisible  avia-builder-el-4  el_after_av_image  el_before_av_textblock '><span class='hr-inner '><span class=\"hr-inner-style\"></span></span></div>\n<section  class='av_textblock_section av-legsbi2m-5d0a807b08bca1ed8034fd959fd6b218'  itemscope=\"itemscope\" itemtype=\"https://schema.org/CreativeWork\" ><div class='avia_textblock'  itemprop=\"text\" ><p class=\"font_8\" style=\"text-align: center;\">The Fair Tenancy Pro Tem Committee was formed with key representatives from Singapore&#8217;s landlord and tenant communities on 26 June 2020, so as to strengthen collaboration and increase the vibrancy and competitiveness of Singapore&#8217;s retail, food &amp; beverages (F&amp;B) and lifestyle sectors.</p>\n<p class=\"font_8\" style=\"text-align: center;\">The result is an industry-led <a title=\"Code of Conduct for Leasing of Retail Premises in Singapore\" href=\"#/fair-tenancymaster-the-code-of-conduct-for-retail-leasing-enhance-your-business-with-fair-tenancy-practices/\" target=\"_blank\" rel=\"noopener\"><strong>Code of Conduct for Leasing of Retail Premises in Singapore</strong></a> (&#8220;Code&#8221;) based on the principles of transparency, reciprocity and sustainability.</p>\n<p class=\"font_8\" style=\"text-align: center;\">The Fair Tenancy Industry Committee (FTIC) was set up on 3 May 2021, to be the custodian of the Code and ensure that it provides guidance to landlords and tenants of qualifying retail premises so that fair and balanced lease negotiations can be achieved. It is represented by both landlords and tenants, as well neutral parties to offer a holistic approach when addressing matters related to retail lease agreements.</p>\n<p class=\"font_8\" style=\"text-align: center;\">If you have any enquires, please direct them to <a href=\"mailto:info@sgtuff.org.sg\" data-auto-recognition=\"true\">info@sgtuff.org.sg</a></p>\n</div></section></div>\n</div></div>" }} 
-      />
+    <div className="page-container">
+      <div className="section-header">
+        <h1 className="section-title">Fair Tenancy Code of Conduct</h1>
+        <p className="section-subtitle">
+          Statutory Framework & Leasing Principles for Commercial Retail Premises in Singapore
+        </p>
+      </div>
+
+      <div className="grid-2">
+        <div className="content-card">
+          <h3>The Code of Conduct Overview</h3>
+          <p>
+            Enacted to establish fair and balanced lease negotiations between retail landlords and tenants, the Code of Conduct sets mandatory leasing principles across 12 key operational areas.
+          </p>
+          <p>
+            SGTUFF played an active role in pushing for the formalization of the Code of Conduct for Leasing of Retail Premises, ensuring small retailers have statutory protections against unfair lease covenants.
+          </p>
+        </div>
+
+        <div className="content-card">
+          <h3>WSQ Fair Tenancy Training Course</h3>
+          <p>
+            SGTUFF conducts regular WSQ-accredited training courses titled: <strong>Contract Development for Fair Tenancy Course</strong>.
+          </p>
+          <p>
+            Taught by experienced commercial legal specialists, the course equips retail directors, lease negotiators, and business owners with practical skills to evaluate lease terms and avoid costly contractual traps.
+          </p>
+          <p style={{ fontSize: '13px', color: 'var(--sgtuff-red)', fontWeight: 700, marginTop: '10px' }}>
+            Inquiries: Call/WhatsApp Jonathan at +65 9694 8505 | Email: jonathan@xprienz.com
+          </p>
+        </div>
+      </div>
+
+      <div className="content-card">
+        <h3>12 Core Leasing Principles Covered by the Code</h3>
+        <div className="grid-2" style={{ gap: '15px', marginTop: '15px', boxShadow: 'none', padding: 0, border: 'none' }}>
+          <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '6px' }}>
+            <strong>1. Base Rent Structure & GTO:</strong> Guidelines on Gross Turnover (GTO) rent formulas and exclusivity of pricing structures.
+          </div>
+          <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '6px' }}>
+            <strong>2. Security Deposit Capping:</strong> Maximum limits on cash security deposits for retail leases.
+          </div>
+          <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '6px' }}>
+            <strong>3. Exclusivity Clauses:</strong> Restrictions on non-compete radius restrictions imposed on tenants.
+          </div>
+          <div style={{ background: '#f8fafc', padding: '15px', borderRadius: '6px' }}>
+            <strong>4. Early Termination & Sales Performance:</strong> Landlord and tenant exit options tied to sales thresholds.
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

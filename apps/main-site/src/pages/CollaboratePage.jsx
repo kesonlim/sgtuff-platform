@@ -1,12 +1,48 @@
 import React from 'react';
 
-export default function CollaboratePage({ onNavigate }) {
+export default function CollaboratePage() {
   return (
-    <div className="scraped-page-container">
-      <div 
-        className="scraped-content-body"
-        dangerouslySetInnerHTML={{ __html: "<div class='flex_column av-6ckda6a-2cc8e887ad4da7cb24216c27e0d2f024 av_one_full  avia-builder-el-0  el_before_av_textblock  avia-builder-el-first  first flex_column_div '     ><section  class='av_textblock_section av-lo45firj-7369cd5e599cbec158da980f7a2b61cc'  itemscope=\"itemscope\" itemtype=\"https://schema.org/CreativeWork\" ><div class='avia_textblock'  itemprop=\"text\" ><h4 style=\"text-align: center;\"><span style=\"text-decoration: underline;\"><strong>Partnership/Collaboration/Advertising/Sponsored Face to Face Network Session</strong></span></h4>\n<p style=\"text-align: center;\">SGTUFF Co-operative Ltd(SGTUFF) has 700+ verified frontline business owners in our group<br />\nrepresenting 600+ brands in 2,600+ retail outlets, with a 20,00+ strong workforce.</p>\n</div></section>\n<div  class='avia-image-container av-lo462na5-dd61ca132fabd21c7243ac4c47f51169 av-styling- avia-align-center  avia-builder-el-2  el_after_av_textblock  avia-builder-el-last '   itemprop=\"image\" itemscope=\"itemscope\" itemtype=\"https://schema.org/ImageObject\" ><div class=\"avia-image-container-inner\"><div class=\"avia-image-overlay-wrap\"><img fetchpriority=\"high\" decoding=\"async\" class='wp-image-500491 avia-img-lazy-loading-not-500491 avia_image ' src=\"#/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-03-at-11.36.27-1030x859.jpeg\" alt='' title='WhatsApp Image 2024-09-03 at 11.36.27'  height=\"859\" width=\"1030\"  itemprop=\"thumbnailUrl\" srcset=\"#/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-03-at-11.36.27-1030x859.jpeg 1030w, #/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-03-at-11.36.27-300x250.jpeg 300w, #/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-03-at-11.36.27-768x641.jpeg 768w, #/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-03-at-11.36.27-705x588.jpeg 705w, #/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-03-at-11.36.27.jpeg 1080w\" sizes=\"(max-width: 1030px) 100vw, 1030px\" /></div></div></div></div><section  class='av_textblock_section av-lo4631d7-d12b44b8384117b898aa0c192595f0cb'  itemscope=\"itemscope\" itemtype=\"https://schema.org/CreativeWork\" ><div class='avia_textblock'  itemprop=\"text\" ><p style=\"text-align: center;\">Kindly contact us at <a href=\"mailto:marketing@sgtuff.org.sg\">marketing@sgtuff.org.sg</a>.</p>\n</div></section></p>\n</div></div>" }} 
-      />
+    <div className="page-container">
+      <div className="section-header">
+        <h1 className="section-title">Collaborate With Us</h1>
+        <p className="section-subtitle">
+          Partner with Singapore Tenants United For Fairness
+        </p>
+      </div>
+
+      <div className="contact-grid">
+        <div className="contact-info">
+          <h3>Partnering with SGTUFF</h3>
+          <p>
+            We welcome collaboration with commercial landlords, government agencies (ESG, MCCY, MTI), retail trade associations, and technology providers.
+          </p>
+          <p style={{ marginTop: '16px' }}>
+            Email: <a href="mailto:info@sgtuff.org.sg">info@sgtuff.org.sg</a><br />
+            Phone: <strong>+65 8845 6623</strong>
+          </p>
+        </div>
+
+        <div className="contact-form">
+          <form onSubmit={(e) => { e.preventDefault(); alert('Collaboration inquiry submitted!'); }}>
+            <label>Organization / Company Name *</label>
+            <input type="text" required placeholder="Company Name" />
+
+            <label>Contact Person *</label>
+            <input type="text" required placeholder="Full Name" />
+
+            <label>E-Mail Address *</label>
+            <input type="email" required placeholder="Email Address" />
+
+            <label>Collaboration Area *</label>
+            <input type="text" required placeholder="e.g. Fair Tenancy, Retail Tech, Sponsorship" />
+
+            <label>Proposal Details *</label>
+            <textarea rows="4" required placeholder="Describe your collaboration proposal..."></textarea>
+
+            <button type="submit" className="btn-submit">Submit Proposal</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

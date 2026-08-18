@@ -1,12 +1,55 @@
 import React from 'react';
 
-export default function MembershipPage({ onNavigate }) {
+export default function MembershipPage() {
   return (
-    <div className="scraped-page-container">
-      <div 
-        className="scraped-content-body"
-        dangerouslySetInnerHTML={{ __html: "<div  class='av-special-heading av-lego5ora-2ca1233d407455bb8214cac7d3fd555d av-special-heading-h1 blockquote modern-quote modern-centered  avia-builder-el-0  el_before_av_hr  avia-builder-el-first '><h1 class='av-special-heading-tag'  itemprop=\"headline\"  >MEMBERSHIP PLAN</h1><div class=\"special-heading-border\"><div class=\"special-heading-inner-border\"></div></div></div>\n<div  class='hr av-legon573-61607349c701e868990a87f2c67dd8a2 hr-invisible  avia-builder-el-1  el_after_av_heading  el_before_av_one_third '><span class='hr-inner '><span class=\"hr-inner-style\"></span></span></div>\n<div class='flex_column av-1q15m-0bac7608aa91b896be7a8831f3eff44c av_one_third  avia-builder-el-2  el_after_av_hr  el_before_av_one_third  first flex_column_div '     ><section  class='av_textblock_section av-legpmg9o-ad863ceb408b400c17b7b6eca015b98e'  itemscope=\"itemscope\" itemtype=\"https://schema.org/CreativeWork\" ><div class='avia_textblock'  itemprop=\"text\" ><h3 style=\"text-align: center;\">Basic Membership</h3>\n<p style=\"text-align: center;\">Registration Fee</p>\n<div id=\"comp-kpru2pkl\" class=\"BaOVQ8 tz5f0K comp-kpru2pkl wixui-text\" data-testid=\"richTextElement\">\n<h3 class=\"font_5\" style=\"text-align: center;\">$50</h3>\n</div>\n<div id=\"comp-kpru2plc\" class=\"BaOVQ8 tz5f0K comp-kpru2plc wixui-text\" data-testid=\"richTextElement\">\n<p class=\"font_7\" style=\"text-align: center;\">\n</div>\n</div></section>\n<div  class='avia-button-wrap av-8gtwa-a67233be385f061fcb3b96b656c82a28-wrap avia-button-center  avia-builder-el-4  el_after_av_textblock  avia-builder-el-last ' ><a href='https://sgtuff.eber.co/sign-in'  class='avia-button av-8gtwa-a67233be385f061fcb3b96b656c82a28 avia-icon_select-no avia-size-small avia-position-center avia-color-theme-color' ><span class='avia_iconbox_title' >Select</span></a></div></div><div class='flex_column av-omrqq-fcf354c8f3cd755e47bd75b68e7af61b av_one_third  avia-builder-el-5  el_after_av_one_third  el_before_av_one_third  flex_column_div '     ><section  class='av_textblock_section av-legpk3fc-ec4d7811b5ff456d2e21cd321f676a28'  itemscope=\"itemscope\" itemtype=\"https://schema.org/CreativeWork\" ><div class='avia_textblock'  itemprop=\"text\" ><h3 style=\"text-align: center;\">Associate Membership</h3>\n<p style=\"text-align: center;\">Most Popular</p>\n<div id=\"comp-kpru2pkl\" class=\"BaOVQ8 tz5f0K comp-kpru2pkl wixui-text\" data-testid=\"richTextElement\">\n<h3></h3>\n<h3 class=\"font_5\" style=\"text-align: center;\">$199</h3>\n</div>\n<div id=\"comp-kpru2plc\" class=\"BaOVQ8 tz5f0K comp-kpru2plc wixui-text\" data-testid=\"richTextElement\">\n<p class=\"font_7\" style=\"text-align: center;\">Per annum</p>\n</div>\n</div></section>\n<div  class='avia-button-wrap av-iiiqa-5927db9b846015ea1342ec249158a4ef-wrap avia-button-center  avia-builder-el-7  el_after_av_textblock  avia-builder-el-last ' ><a href='#/associate-membership/'  class='avia-button av-iiiqa-5927db9b846015ea1342ec249158a4ef avia-icon_select-no avia-size-small avia-position-center avia-color-theme-color'  target=\"_blank\"  rel=\"noopener noreferrer\"><span class='avia_iconbox_title' >Select</span></a></div></div></p>\n<div class='flex_column av-2s1t96-840a8f311749304a79ad98d1105f9614 av_one_third  avia-builder-el-8  el_after_av_one_third  el_before_av_hr  flex_column_div '     ><section  class='av_textblock_section av-lego6qfs-76b2669c84781ee463387fde37ee8059'  itemscope=\"itemscope\" itemtype=\"https://schema.org/CreativeWork\" ><div class='avia_textblock'  itemprop=\"text\" ><h3 style=\"text-align: center;\">Patron Membership</h3>\n<p style=\"text-align: center;\">Support the cause</p>\n<div id=\"comp-kpru2pkl\" class=\"BaOVQ8 tz5f0K comp-kpru2pkl wixui-text\" data-testid=\"richTextElement\">\n<h3 class=\"font_5\" style=\"text-align: center;\">$999</h3>\n</div>\n<div id=\"comp-kpru2plc\" class=\"BaOVQ8 tz5f0K comp-kpru2plc wixui-text\" data-testid=\"richTextElement\">\n<p class=\"font_7\" style=\"text-align: center;\">Lifetime</p>\n</div>\n</div></section>\n<div  class='avia-button-wrap av-lego7cgj-8a2eb774f3577c5dfd52315ef0a64855-wrap avia-button-center  avia-builder-el-10  el_after_av_textblock  avia-builder-el-last ' ><a href='#/185-2/'  class='avia-button av-lego7cgj-8a2eb774f3577c5dfd52315ef0a64855 avia-icon_select-no avia-size-small avia-position-center avia-color-theme-color'  target=\"_blank\"  rel=\"noopener noreferrer\"><span class='avia_iconbox_title' >Select</span></a></div></div>\n<div  class='hr av-legpmyc1-9ea968130a4a2584bb857f71c39558b0 hr-invisible  avia-builder-el-11  el_after_av_one_third  el_before_av_one_full '><span class='hr-inner '><span class=\"hr-inner-style\"></span></span></div>\n<div class='flex_column av-9w7fm-0a65cb295cca081f93d18ff370dd837d av_one_full  avia-builder-el-12  el_after_av_hr  avia-builder-el-last  first flex_column_div '     ><div  class='avia-image-container av-ly6tk7jd-125d703521b22f1030c4fc39d4c1559b av-styling- avia-align-center  avia-builder-el-13  avia-builder-el-no-sibling '   itemprop=\"image\" itemscope=\"itemscope\" itemtype=\"https://schema.org/ImageObject\" ><div class=\"avia-image-container-inner\"><div class=\"avia-image-overlay-wrap\"><img fetchpriority=\"high\" decoding=\"async\" class='wp-image-501423 avia-img-lazy-loading-not-501423 avia_image ' src=\"#/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-26-at-9.33.04-PM.jpeg\" alt='' title='WhatsApp Image 2025-12-26 at 9.33.04 PM'  height=\"1248\" width=\"963\"  itemprop=\"thumbnailUrl\" srcset=\"#/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-26-at-9.33.04-PM.jpeg 963w, #/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-26-at-9.33.04-PM-231x300.jpeg 231w, #/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-26-at-9.33.04-PM-795x1030.jpeg 795w, #/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-26-at-9.33.04-PM-768x995.jpeg 768w, #/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-26-at-9.33.04-PM-544x705.jpeg 544w\" sizes=\"(max-width: 963px) 100vw, 963px\" /></div></div></div></div>\n</div></div>" }} 
-      />
+    <div className="page-container">
+      <div className="section-header">
+        <h1 className="section-title">SGTUFF Co-Op Membership</h1>
+        <p className="section-subtitle">
+          Join Singapore's leading commercial retail tenant co-operative
+        </p>
+      </div>
+
+      <div className="grid-3">
+        <div className="content-card" style={{ borderTop: '4px solid var(--sgtuff-navy)' }}>
+          <h3>Ordinary Membership</h3>
+          <p>For registered Singapore SME retail, F&B, wellness, and service business owners.</p>
+          <ul style={{ paddingLeft: '18px', color: 'var(--text-secondary)', marginBottom: '20px', fontSize: '14px' }}>
+            <li>Full voting rights at SGTUFF AGM.</li>
+            <li>Access to lease benchmark data.</li>
+            <li>Co-Op group purchasing benefits.</li>
+          </ul>
+          <a href="https://sgtuff.eber.co/sign-in" target="_blank" rel="noreferrer" className="btn-submit" style={{ display: 'inline-block', textAlign: 'center', textDecoration: 'none' }}>
+            Apply via Eber Portal ↗
+          </a>
+        </div>
+
+        <div className="content-card" style={{ borderTop: '4px solid var(--sgtuff-red)' }}>
+          <h3>Associate Membership</h3>
+          <p>For aspiring entrepreneurs, retail managers, and industry professionals.</p>
+          <ul style={{ paddingLeft: '18px', color: 'var(--text-secondary)', marginBottom: '20px', fontSize: '14px' }}>
+            <li>Access to WSQ Fair Tenancy workshops.</li>
+            <li>Industry networking events.</li>
+            <li>Monthly Retail Movement reports.</li>
+          </ul>
+          <a href="https://sgtuff.eber.co/sign-in" target="_blank" rel="noreferrer" className="btn-submit" style={{ display: 'inline-block', textAlign: 'center', textDecoration: 'none', background: 'var(--sgtuff-navy)' }}>
+            Register Online ↗
+          </a>
+        </div>
+
+        <div className="content-card" style={{ borderTop: '4px solid var(--sgtuff-amber)' }}>
+          <h3>Corporate Partner</h3>
+          <p>For service providers, technology vendors, legal firms, and corporate sponsors.</p>
+          <ul style={{ paddingLeft: '18px', color: 'var(--text-secondary)', marginBottom: '20px', fontSize: '14px' }}>
+            <li>Feature in SGTUFF Business Directory.</li>
+            <li>Sponsorship opportunities.</li>
+            <li>Direct outreach to 1,000+ retail brands.</li>
+          </ul>
+          <a href="mailto:info@sgtuff.org.sg" className="btn-submit" style={{ display: 'inline-block', textAlign: 'center', textDecoration: 'none', background: 'var(--sgtuff-amber)' }}>
+            Contact Partnerships ✉️
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
