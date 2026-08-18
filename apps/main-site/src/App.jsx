@@ -1,78 +1,200 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
+  const [activeTab, setActiveTab] = useState('home');
+
   return (
-    <div>
-      {/* Top Banner */}
-      <div className="top-bar">
-        <span>🇸🇬 SGTUFF Co-Operative Ltd (Reg: CS000438)</span>
-        <span className="motto">"Promoting Fair Tenancy & Transparent Commercial Leasing"</span>
+    <div id="wrapper">
+      {/* Top Meta Bar */}
+      <div id="header_meta">
+        <div className="meta-container">
+          <div className="meta-info">
+            <span>✉️ info@sgtuff.org.sg</span>
+            <span>📞 +65 8845 6623</span>
+          </div>
+          <ul className="social-bookmarks">
+            <li>
+              <a href="https://www.facebook.com/SGTUFF" target="_blank" rel="noreferrer" title="Facebook">f</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sg.tenants.united.for.fairness/?hl=en" target="_blank" rel="noreferrer" title="Instagram">📷</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/sgtuff/" target="_blank" rel="noreferrer" title="LinkedIn">in</a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@sgtuff2020" target="_blank" rel="noreferrer" title="TikTok">🎵</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      {/* Header */}
-      <header className="header">
-        <div className="header-inner">
-          <a href="#" className="logo">
-            SGTUFF<span>.ORG.SG</span>
-          </a>
-          <nav className="nav">
-            <a href="#about">About SGTUFF</a>
-            <a href="#fair-tenancy">Fair Tenancy Code</a>
-            <a href="https://sgtuff-mall-tracker.pages.dev" target="_blank" rel="noreferrer" className="btn-cta">
-              🛍️ Retail Tenant Tracker
+      {/* Main Header & Official Logo */}
+      <header id="header">
+        <div id="header_main">
+          <div className="logo-container">
+            <a href="#">
+              <img 
+                src="/SGTUFF-Logo-08-1030x321.jpg" 
+                alt="SGTUFF – Promoting Fair Tenancy & Retail Leasing Best Practices in Singapore" 
+                className="logo-img"
+              />
             </a>
-            <a href="/admin" style={{ fontSize: '0.85rem', color: '#64748b' }}>
-              ⚙️ Decap CMS Login
-            </a>
-          </nav>
+          </div>
+        </div>
+
+        {/* Navigation Bar */}
+        <div id="header_main_alternate">
+          <div className="nav-container">
+            <ul className="main-menu">
+              <li className={activeTab === 'home' ? 'active' : ''}>
+                <a href="#" onClick={() => setActiveTab('home')}>Home</a>
+              </li>
+              <li className={activeTab === 'about' ? 'active' : ''}>
+                <a href="https://sgtuff.org.sg/about-us/" target="_blank" rel="noreferrer">About Us</a>
+              </li>
+              <li>
+                <a href="https://sgtuff.org.sg/membership-plan/" target="_blank" rel="noreferrer">Membership</a>
+              </li>
+              <li>
+                <a href="https://sgtuff.org.sg/219-2/" target="_blank" rel="noreferrer">Fair Tenancy</a>
+              </li>
+              <li>
+                <a href="https://sgtuff.org.sg/business-network/" target="_blank" rel="noreferrer">Business Network</a>
+              </li>
+              <li>
+                <a href="https://sgtuff.org.sg/latest-news/" target="_blank" rel="noreferrer">Latest News</a>
+              </li>
+              <li className="tracker-highlight">
+                <a href="https://sgtuff-mall-tracker.pages.dev" target="_blank" rel="noreferrer">
+                  🛍️ Retail Tenant Tracker
+                </a>
+              </li>
+              <li>
+                <a href="https://sgtuff.eber.co/sign-in" target="_blank" rel="noreferrer">Member Log In</a>
+              </li>
+              <li>
+                <a href="/admin">Decap CMS</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-inner">
-          <h1>Empowering Singapore Retail Tenants & <span>Commercial Success</span></h1>
-          <p>
-            Singapore Tenants United For Fairness (SGTUFF) is a registered co-operative advocacy body representing retail, F&B, and lifestyle tenants across CapitaLand, Frasers, Mapletree, Lendlease, and Suntec shopping malls.
+      {/* Hero Featured Image */}
+      <main className="main-content-wrap">
+        <div className="hero-image-wrap">
+          <img 
+            src="/hero-banner.jpeg" 
+            alt="SGTUFF Singapore Tenants United For Fairness" 
+            className="hero-img" 
+          />
+        </div>
+
+        {/* Latest Articles & Updates */}
+        <div className="blog-section">
+          <h2 className="blog-section-title">Latest Updates & Fair Tenancy Insights</h2>
+          
+          <div className="blog-list">
+            <article className="blog-card">
+              <h3 className="blog-title">
+                <a href="#">Contract Development for Fair Tenancy Course (WSQ)</a>
+              </h3>
+              <div className="blog-meta-info">April 2, 2024 / 0 Comments</div>
+              <p className="blog-excerpt">
+                Secure your spot for our upcoming sessions! Dive into the Code of Conduct for Retail Premises leasing, ensuring optimal financial outcomes. Act fast! Contact Jonathan at ☎️ 9694 8505 via Call/WhatsApp or ✉️ email at jonathan@xprienz.com. Learn from our seasoned trainer, Nan, former lawyer and fair tenancy specialist.
+              </p>
+              <a href="#" className="read-more-btn">Read More →</a>
+            </article>
+
+            <article className="blog-card">
+              <h3 className="blog-title">
+                <a href="#">Home Safety & Eldercare Support – Free Benefits!</a>
+              </h3>
+              <div className="blog-meta-info">February 23, 2026 / 0 Comments</div>
+              <p className="blog-excerpt">
+                SGTUFF is offering Home Safety & Eldercare Support for eligible participants in retail, F&B & service industries. Edge guards, non-slip pads, motion sensor lights, bedrails & health assessment support.
+              </p>
+              <a href="#" className="read-more-btn">Read More →</a>
+            </article>
+          </div>
+        </div>
+      </main>
+
+      {/* Quote Section */}
+      <section className="quote-section">
+        <h2>“Every man is guilty of all the good he did not do”</h2>
+        <h3>~ Voltaire</h3>
+      </section>
+
+      {/* Contact SGTUFF Section */}
+      <section className="contact-section">
+        <div className="contact-info-box">
+          <h2>CONTACT SGTUFF</h2>
+          <p>Have questions about retail tenancy agreements, leasing dispute resolution, or membership?</p>
+          <p style={{ marginTop: '15px' }}>
+            Email: <a href="mailto:info@sgtuff.org.sg">info@sgtuff.org.sg</a><br />
+            Phone: +65 8845 6623
           </p>
-          <div className="hero-btns">
-            <a href="https://sgtuff-mall-tracker.pages.dev" target="_blank" rel="noreferrer" className="btn btn-primary">
-              Launch Retail Movement Index ↗
-            </a>
-            <a href="#fair-tenancy" className="btn btn-outline">
-              Read Code of Conduct
-            </a>
-          </div>
+        </div>
+
+        <div className="contact-form">
+          <form onSubmit={(e) => { e.preventDefault(); alert('Message sent!'); }}>
+            <label>Name *</label>
+            <input type="text" required placeholder="Your Name" />
+
+            <label>E-Mail *</label>
+            <input type="email" required placeholder="Your Email Address" />
+
+            <label>Contact Number *</label>
+            <input type="text" required placeholder="Your Phone Number" />
+
+            <label>Subject *</label>
+            <input type="text" required placeholder="Subject" />
+
+            <label>Type your message here *</label>
+            <textarea rows="4" required placeholder="Message..."></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </section>
 
-      {/* Main Content Pillars */}
-      <section className="section">
-        <div className="section-title">
-          <h2>SGTUFF Core Advocacy Pillars</h2>
+      {/* Footer Widgets */}
+      <div id="footer">
+        <div className="footer-container">
+          <div>
+            <h3>Follow Us on Social Media</h3>
+            <p style={{ marginTop: '10px', fontSize: '13px' }}>
+              Connect with Singapore Tenants United For Fairness on official platforms.
+            </p>
+          </div>
+
+          <div className="footer-socials">
+            <a href="https://www.linkedin.com/company/sgtuff/" target="_blank" rel="noreferrer">
+              <img src="https://sgtuff.org.sg/wp-content/uploads/2023/09/square-linkedin-logo-isolated-white-background_469489-892-80x80.jpg" alt="LinkedIn" />
+            </a>
+            <a href="https://www.tiktok.com/@sgtuff2020" target="_blank" rel="noreferrer">
+              <img src="https://sgtuff.org.sg/wp-content/uploads/2023/09/Tik-Tok-white--80x80.png" alt="TikTok" />
+            </a>
+            <a href="https://www.instagram.com/sg.tenants.united.for.fairness/?hl=en" target="_blank" rel="noreferrer">
+              <img src="https://sgtuff.org.sg/wp-content/uploads/2023/09/instagram-icon-white-80x80.jpg" alt="Instagram" />
+            </a>
+            <a href="https://www.facebook.com/groups/SGtenantsUNITEDforFairness/" target="_blank" rel="noreferrer">
+              <img src="https://sgtuff.org.sg/wp-content/uploads/2023/09/2021_Facebook_icon.svg-80x80.png" alt="Facebook" />
+            </a>
+          </div>
         </div>
+      </div>
 
-        <div className="grid-3">
-          <div className="card">
-            <h3>📜 Fair Tenancy Code of Conduct</h3>
-            <p>Advocating for standardized commercial lease agreements, transparent service charges, and fair landlord-tenant arbitration frameworks in Singapore.</p>
-          </div>
-
-          <div className="card">
-            <h3>🛍️ Retail Tenant Tracker</h3>
-            <p>Monthly automated intelligence tracking retail store movements, occupancy turnover, and tenant departures across 22 major Singapore shopping malls.</p>
-          </div>
-
-          <div className="card">
-            <h3>🤝 Tenant Support & Co-Op</h3>
-            <p>Providing legal guidance, lease negotiation benchmarks, and collaborative purchasing power for Singapore SME retail operators.</p>
+      {/* Socket Footer */}
+      <footer id="socket">
+        <div className="socket-container">
+          <span>© 2023 by SGTUFF - Singapore Tenants United For Fairness Co-Operative Ltd</span>
+          <div className="socket-links">
+            <a href="https://sgtuff.org.sg" target="_blank" rel="noreferrer">Official Site</a> | <a href="/admin">Decap CMS</a>
           </div>
         </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} SGTUFF Co-Operative Ltd. All rights reserved. | Hosted on Cloudflare Pages Global Edge Network.</p>
       </footer>
     </div>
   );
