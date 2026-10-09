@@ -10,6 +10,7 @@
   "scripts": {
     "build:tracker": "npm run build --workspace=sgtuff-mall-tracker",
     "build:mainsite": "npm run build --workspace=sgtuff-main-site",
-    "test": "cd apps/mall-tenant-tracker && node testEngine.js"
+    "test": "cd apps/mall-tenant-tracker && node testEngine.js",
+    "build:web": "npm run build --workspace=sgtuff-web"
   }
 }

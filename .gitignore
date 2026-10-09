@@ -15,3 +15,6 @@ dist_inline/
 # Scratch / Temp Scripts
 scratch/
 sftp_batch.txt
+
+# Astro
+.astro/

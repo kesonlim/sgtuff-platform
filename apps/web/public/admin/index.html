@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>SGTUFF Content Manager</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>window.CMS_MANUAL_INIT = true;</script>
+  </head>
+  <body>
+    <script src="https://unpkg.com/decap-cms@3.16.3/dist/decap-cms.js"></script>
+    <script>
+      // Log in through this site's own OAuth functions (/api/auth), on whatever
+      // domain the CMS is opened from (production or a preview deploy).
+      CMS.init({ config: { backend: { base_url: window.location.origin } } });
+      CMS.registerPreviewStyle('/admin/preview.css');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+name = "sgtuff-web"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-09-01"
+
+[vars]
+MAIL_TO = "info@sgtuff.org.sg"
+MAIL_FROM = "SGTUFF Website <website@sgtuff.org>"
+# Secrets (set in Cloudflare dashboard, not here):
+#   RESEND_API_KEY, TURNSTILE_SECRET_KEY

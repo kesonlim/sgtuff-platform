@@ -1,0 +1,29 @@
+---
+import { Check } from 'lucide-react';
+import Base from '@/layouts/Base.astro';
+import PageHero from '@/components/PageHero.astro';
+import { buttonVariants } from '@/components/ui/button';
+import { PAGES, SITE } from '@/lib/site';
+
+const tiers = PAGES.membership.tiers;
+---
+<Base title="Membership" description="Join SGTUFF, Singapore's co-operative for SME tenants in retail, F&B and services.">
+  <PageHero eyebrow={PAGES.membership.eyebrow} title={PAGES.membership.title} lede={PAGES.membership.lede}>
+    <a href={SITE.memberLoginUrl} class={buttonVariants({ variant: 'outline', className: 'self-start' })}>Member login ↗</a>
+  </PageHero>
+
+  <section class="container-page grid gap-6 py-20 md:grid-cols-3">
+    {tiers.map((t) => (
+      <div class:list={['flex flex-col gap-5 rounded-md p-8', t.featured ? 'bg-foreground text-background' : 'border-2 border-foreground']}>
+        <h2 class="font-display text-2xl font-extrabold">{t.name}</h2>
+        <p class:list={[t.featured ? 'text-ink-soft' : 'text-body']}>{t.for}</p>
+        <ul class="flex flex-col gap-3">
+          {t.perks.map((p) => (
+            <li class="flex gap-3"><Check className="mt-1 size-5 shrink-0 text-primary" aria-hidden="true" />{p}</li>
+          ))}
+        </ul>
+        <a href={t.ctaHref} class={buttonVariants({ variant: t.featured ? 'primary' : 'outline', className: 'mt-auto' })}>{t.ctaLabel}</a>
+      </div>
+    ))}
+  </section>
+</Base>

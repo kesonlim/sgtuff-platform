@@ -1,0 +1,27 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHero from '@/components/PageHero.astro';
+import { PAGES } from '@/lib/site';
+import JoinBand from '@/components/JoinBand.astro';
+import { buttonVariants } from '@/components/ui/button';
+---
+<Base title="Fair Tenancy" description="SGTUFF's work on the Code of Conduct for Leasing of Retail Premises, and our WSQ Fair Tenancy training course.">
+  <PageHero eyebrow={PAGES.fairTenancy.eyebrow} title={PAGES.fairTenancy.title} lede={PAGES.fairTenancy.lede} />
+
+  <section class="container-page grid gap-12 py-20 lg:grid-cols-2">
+    <div class="flex flex-col gap-4">
+      <h2 class="font-display text-3xl font-extrabold">The Code of Conduct</h2>
+      <p class="text-body">The Code sets out leasing principles for qualifying retail leases, covering areas such as rent structures, service charges, security deposits and early termination.</p>
+      <p class="text-body">SGTUFF campaigned for the Code to be formalised so that small retailers have real protection against unfair lease terms, and we continue to push for full adherence.</p>
+    </div>
+    <div class="flex flex-col gap-4 rounded-md border-2 border-foreground p-8">
+      <p class="eyebrow text-primary-strong">WSQ course</p>
+      <h2 class="font-display text-3xl font-extrabold">Contract Development for Fair Tenancy</h2>
+      <p class="text-body">A practical course for business owners and lease negotiators: understand the Code, evaluate lease terms and avoid costly traps. Taught by former lawyer Lim Hui Nan.</p>
+      <p class="text-[15px]">Enquiries: Jonathan, <a href="tel:+6596948505">+65 9694 8505</a> (call or WhatsApp) or <a href="mailto:jonathan@xprienz.com">jonathan@xprienz.com</a></p>
+      <a href="/latest-news/2024-04-02-contract-development-for-fair-tenancy-course-wsq" class={buttonVariants({ variant: 'outline', className: 'self-start' })}>Course details</a>
+    </div>
+  </section>
+
+  <JoinBand />
+</Base>

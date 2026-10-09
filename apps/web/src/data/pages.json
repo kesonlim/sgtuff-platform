@@ -1,0 +1,48 @@
+{
+  "home": {
+    "badge": "For retail, F&B and services SMEs",
+    "title": "Your landlord has lawyers.",
+    "highlight": "You have us.",
+    "lede": "SGTUFF is a registered co-operative standing up for frontline SMEs on fair tenancy and manpower. Join in two minutes."
+  },
+  "about": {
+    "eyebrow": "Registered co-operative CS000438",
+    "title": "Tenants, united.",
+    "lede": "SGTUFF is an advocate for local SME frontline businesses in retail, F&B and services, focusing on fair tenancy and manpower issues."
+  },
+  "fairTenancy": {
+    "eyebrow": "Fair Tenancy",
+    "title": "A fair lease is not a favour.",
+    "lede": "The Code of Conduct for Leasing of Retail Premises sets the ground rules for retail leases in Singapore. We help tenants know it and use it."
+  },
+  "membership": {
+    "eyebrow": "Membership",
+    "title": "Stronger together.",
+    "lede": "Pick the membership that fits you. Already a member? Log in to the member portal.",
+    "tiers": [
+      { "name": "Ordinary member", "for": "SME owners in retail, F&B, wellness and services.", "perks": ["Voting rights at the AGM", "Lease benchmarks and guidance", "Member benefits and programmes"], "ctaLabel": "Join now", "ctaHref": "/join", "featured": true },
+      { "name": "Associate member", "for": "Aspiring entrepreneurs, retail managers and industry professionals.", "perks": ["Fair Tenancy workshops", "Networking events", "Retail movement updates"], "ctaLabel": "Join now", "ctaHref": "/join", "featured": false },
+      { "name": "Corporate partner", "for": "Service providers, technology vendors, law firms and sponsors.", "perks": ["Listing in the Business Network", "Sponsorship opportunities", "Reach SME operators directly"], "ctaLabel": "Partner with us", "ctaHref": "/collaborate", "featured": false }
+    ]
+  },
+  "businessNetwork": {
+    "eyebrow": "Business Network",
+    "title": "Small alone. Big together.",
+    "lede": "The SGTUFF Business Network connects brick-and-mortar retailers, F&B operators and service providers."
+  },
+  "news": {
+    "eyebrow": "Latest news",
+    "title": "What’s happening.",
+    "lede": "Updates on fair tenancy, member benefits and retail movements."
+  },
+  "collaborate": {
+    "eyebrow": "Collaborate",
+    "title": "Let’s build fairer retail.",
+    "lede": "We work with government agencies, landlords, trade associations, media and technology providers."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Talk to us.",
+    "lede": "Questions about your lease, membership or working with us? We’re here."
+  }
+}

@@ -1,0 +1,4 @@
+body { font-family: "Public Sans", system-ui, sans-serif; color: #2b2b28; line-height: 1.6; padding: 24px; max-width: 760px; }
+h1, h2, h3 { font-family: "Arial Narrow", Arial, sans-serif; color: #111; line-height: 1.1; }
+a { color: #b8000e; }
+img { max-width: 100%; border-radius: 6px; }

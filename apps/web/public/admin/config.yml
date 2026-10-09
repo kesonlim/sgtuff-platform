@@ -1,0 +1,102 @@
+# Decap CMS: https://decapcms.org/docs/configuration-options/
+# Staff log in with a GitHub account that has write access to this repo.
+backend:
+  name: github
+  repo: kesonlim/sgtuff-platform
+  branch: main
+  auth_endpoint: api/auth
+  # base_url is set to the current origin in index.html
+
+# Every save becomes a draft; "Publish" merges it to main and the site redeploys.
+publish_mode: editorial_workflow
+site_url: https://www.sgtuff.org
+logo_url: /images/sgtuff-logo.jpg
+
+media_folder: apps/web/public/uploads
+public_folder: /uploads
+
+collections:
+  - name: news
+    label: News
+    label_singular: Post
+    description: Posts shown on Latest News and the homepage.
+    folder: apps/web/src/content/news
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "latest-news/{{filename}}"
+    sortable_fields: [date, title]
+    summary: "{{title}} ({{date | date('D MMM YYYY')}})"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publish date, name: date, widget: datetime }
+      - label: Category
+        name: category
+        widget: select
+        options: [Fair Tenancy, Member Benefits, Retail Movement Report, Industry Insights, Member News]
+      - { label: Summary, name: excerpt, widget: text, hint: "One or two sentences shown on news cards and in Google results." }
+      - { label: Cover image, name: image, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: settings
+    label: Site settings
+    editor: { preview: false }
+    files:
+      - name: site
+        label: Contact & key facts
+        file: apps/web/src/data/site.json
+        fields:
+          - { label: Email, name: email, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Year founded, name: foundedYear, widget: number, value_type: int }
+          - { label: Malls tracked, name: mallsTracked, widget: number, value_type: int }
+          - { label: Retail Tracker URL, name: trackerUrl, widget: string }
+          - { label: Member login URL, name: memberLoginUrl, widget: string }
+          - { label: Mission statement, name: mission, widget: text }
+          - label: Social links
+            name: socials
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Name, name: label, widget: string }
+              - { label: URL, name: href, widget: string }
+
+  - name: pages
+    label: Page text
+    editor: { preview: false }
+    files:
+      - name: pages
+        label: Page headings
+        file: apps/web/src/data/pages.json
+        fields:
+          - label: Home
+            name: home
+            widget: object
+            fields:
+              - { label: Badge, name: badge, widget: string }
+              - { label: Headline, name: title, widget: string }
+              - { label: Headline (red part), name: highlight, widget: string }
+              - { label: Intro, name: lede, widget: text }
+          - { label: About, name: about, widget: object, fields: [ { label: Eyebrow, name: eyebrow, widget: string }, { label: Headline, name: title, widget: string }, { label: Intro, name: lede, widget: text } ] }
+          - { label: Fair Tenancy, name: fairTenancy, widget: object, fields: [ { label: Eyebrow, name: eyebrow, widget: string }, { label: Headline, name: title, widget: string }, { label: Intro, name: lede, widget: text } ] }
+          - label: Membership
+            name: membership
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Headline, name: title, widget: string }
+              - { label: Intro, name: lede, widget: text }
+              - label: Tiers
+                name: tiers
+                widget: list
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Who it's for, name: for, widget: text }
+                  - { label: Perks, name: perks, widget: list, field: { label: Perk, name: perk, widget: string } }
+                  - { label: Button label, name: ctaLabel, widget: string }
+                  - { label: Button link, name: ctaHref, widget: string }
+                  - { label: Highlight this tier, name: featured, widget: boolean, default: false }
+          - { label: Business Network, name: businessNetwork, widget: object, fields: [ { label: Eyebrow, name: eyebrow, widget: string }, { label: Headline, name: title, widget: string }, { label: Intro, name: lede, widget: text } ] }
+          - { label: Latest News, name: news, widget: object, fields: [ { label: Eyebrow, name: eyebrow, widget: string }, { label: Headline, name: title, widget: string }, { label: Intro, name: lede, widget: text } ] }
+          - { label: Collaborate, name: collaborate, widget: object, fields: [ { label: Eyebrow, name: eyebrow, widget: string }, { label: Headline, name: title, widget: string }, { label: Intro, name: lede, widget: text } ] }
+          - { label: Contact, name: contact, widget: object, fields: [ { label: Eyebrow, name: eyebrow, widget: string }, { label: Headline, name: title, widget: string }, { label: Intro, name: lede, widget: text } ] }

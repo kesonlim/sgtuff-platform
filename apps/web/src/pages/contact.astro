@@ -1,0 +1,29 @@
+---
+import { Mail, Phone } from 'lucide-react';
+import Base from '@/layouts/Base.astro';
+import PageHero from '@/components/PageHero.astro';
+import LeadForm from '@/components/LeadForm';
+import { contactFields } from '@/components/forms';
+import { PAGES, SITE } from '@/lib/site';
+---
+<Base title="Contact" description="Contact SGTUFF about tenancy issues, membership or partnerships.">
+  <PageHero eyebrow={PAGES.contact.eyebrow} title={PAGES.contact.title} lede={PAGES.contact.lede} />
+  <section class="container-page grid gap-12 py-20 lg:grid-cols-[1fr_1.3fr]">
+    <div class="flex flex-col gap-5">
+      <a href={`mailto:${SITE.email}`} class="flex items-center gap-3 text-lg font-semibold"><Mail className="size-5 text-primary" aria-hidden="true" />{SITE.email}</a>
+      <a href={`tel:${SITE.phone.replace(/\s/g, '')}`} class="flex items-center gap-3 text-lg font-semibold"><Phone className="size-5 text-primary" aria-hidden="true" />{SITE.phone}</a>
+      <p class="text-body">{SITE.legalName}<br />Registration {SITE.regNo}</p>
+    </div>
+    <div class="rounded-md border-2 border-foreground p-6 sm:p-8">
+      <LeadForm
+        client:load
+        endpoint="/api/contact"
+        fields={contactFields}
+        submitLabel="Send message"
+        successTitle="Message sent."
+        successBody="Thanks for reaching out. We’ll reply to your email soon."
+        turnstileSiteKey={SITE.turnstileSiteKey}
+      />
+    </div>
+  </section>
+</Base>

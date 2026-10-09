@@ -1,0 +1,30 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '@/layouts/Base.astro';
+import JoinBand from '@/components/JoinBand.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('news');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props as { post: CollectionEntry<'news'> };
+const { Content } = await render(post);
+const date = post.data.date.toLocaleDateString('en-SG', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base title={post.data.title} description={post.data.excerpt} image={post.data.image}>
+  <article>
+    <header class="border-b-4 border-foreground bg-muted">
+      <div class="container-page flex max-w-3xl flex-col gap-4 py-14 sm:py-20">
+        <a href="/latest-news" class="eyebrow self-start no-underline">← All news</a>
+        <p class="eyebrow text-primary-strong">{post.data.category} · <time datetime={post.data.date.toISOString()}>{date}</time></p>
+        <h1 class="font-display text-4xl font-black leading-[1.05] sm:text-5xl">{post.data.title}</h1>
+      </div>
+    </header>
+    <div class="container-page max-w-3xl py-14">
+      {post.data.image && <img src={post.data.image} alt="" class="mb-10 w-full rounded-md" />}
+      <div class="prose-sgtuff text-lg"><Content /></div>
+    </div>
+  </article>
+  <JoinBand />
+</Base>
