@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'apps/mall-tenant-tracker/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 jobs:
@@ -23,16 +28,14 @@ jobs:
         run: npm ci
 
       - name: Build Standalone Bundle
-        run: |
-          npm run build
-          node buildInlineApp.js
+        run: npm run build:tracker
 
       - name: Deploy to WPX Subdomain via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER || '198.60.193.11' }}
-          username: ${{ secrets.FTP_USERNAME || 'sgtuff_deploy.ftp.diaperca' }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
+          local-dir: ./apps/mall-tenant-tracker/dist/
           server-dir: ./public_html/mall-tenant-tracker.sgtuff.org.sg/
           dangerous-clean-slate: false
