@@ -8,8 +8,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build:tracker": "cd apps/mall-tenant-tracker && npm run build && node buildInlineApp.js",
-    "build:mainsite": "cd apps/main-site && npm run build",
+    "build:tracker": "npm run build --workspace=sgtuff-mall-tracker",
+    "build:mainsite": "npm run build --workspace=sgtuff-main-site",
     "test": "cd apps/mall-tenant-tracker && node testEngine.js"
   }
 }
