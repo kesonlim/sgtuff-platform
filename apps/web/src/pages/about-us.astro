@@ -1,0 +1,44 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHero from '@/components/PageHero.astro';
+import JoinBand from '@/components/JoinBand.astro';
+import { SITE } from '@/lib/site';
+
+const objectives = [
+  'Advocate for full adherence to the Code of Conduct for Leasing of Retail Premises in Singapore.',
+  'Publish market data on retail movements and occupancy, starting with the Retail Tenant Tracker.',
+  'Give SME tenants practical guidance on lease negotiation and disputes.',
+  'Represent tenant interests in dialogues with government agencies and industry.',
+];
+---
+<Base title="About us" description={SITE.mission}>
+  <PageHero eyebrow={`Registered co-operative ${SITE.regNo}`} title="Tenants, united." lede={SITE.mission} />
+
+  <section class="container-page grid gap-12 py-20 lg:grid-cols-2">
+    <div class="flex flex-col gap-4">
+      <h2 class="font-display text-3xl font-extrabold">Why we exist</h2>
+      <p class="text-body">SGTUFF was formed in 2020, during the COVID-19 crisis, to unite small and medium retail, F&amp;B and service tenants across Singapore.</p>
+      <p class="text-body">We push for fair commercial tenancy: transparent leases, clear service charges and constructive landlord–tenant relationships.</p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h2 class="font-display text-3xl font-extrabold">How we’re run</h2>
+      <p class="text-body">SGTUFF is registered with the Registry of Co-operative Societies. It is governed by an elected committee of business owners and run democratically by its members.</p>
+    </div>
+  </section>
+
+  <section class="bg-muted">
+    <div class="container-page flex flex-col gap-8 py-20">
+      <h2 class="font-condensed text-5xl leading-none">What we do</h2>
+      <ol class="grid gap-6 md:grid-cols-2">
+        {objectives.map((o, i) => (
+          <li class="flex gap-5 border-t-4 border-foreground pt-5">
+            <span class="font-display text-3xl font-black text-primary">{String(i + 1).padStart(2, '0')}</span>
+            <span class="text-lg text-body">{o}</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <JoinBand />
+</Base>

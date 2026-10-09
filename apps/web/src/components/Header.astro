@@ -1,0 +1,71 @@
+---
+import { Menu, X } from 'lucide-react';
+import { NAV, SITE } from '@/lib/site';
+import { buttonVariants } from '@/components/ui/button';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isActive = (href: string) => path === href || path.startsWith(`${href}/`);
+---
+<header class="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85">
+  <div class="container-page flex h-[72px] items-center justify-between gap-4">
+    <a href="/" class="shrink-0" aria-label="SGTUFF home">
+      <img src="/images/sgtuff-logo.jpg" alt="Singapore Tenants United for Fairness" width="141" height="44" class="h-10 w-auto sm:h-11" />
+    </a>
+
+    <nav aria-label="Main" class="hidden lg:block">
+      <ul class="flex items-center gap-1">
+        {NAV.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+              class="relative rounded-sm px-3 py-2 text-[15px] font-semibold text-foreground no-underline hover:bg-muted hover:text-foreground aria-[current=page]:text-primary-strong aria-[current=page]:after:absolute aria-[current=page]:after:inset-x-3 aria-[current=page]:after:-bottom-[15px] aria-[current=page]:after:h-[3px] aria-[current=page]:after:bg-primary"
+            >{item.label}</a>
+          </li>
+        ))}
+        <li>
+          <a href={SITE.trackerUrl} class="rounded-sm px-3 py-2 text-[15px] font-semibold text-foreground no-underline hover:bg-muted hover:text-foreground">Tracker ↗</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href={SITE.memberLoginUrl} class={buttonVariants({ variant: 'ghost', size: 'sm', className: 'hidden sm:inline-flex' })}>Member login</a>
+      <a href="/join" class={buttonVariants({ size: 'sm' })}>Join</a>
+      <button
+        type="button"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open menu"
+        class="inline-flex size-11 items-center justify-center rounded-sm text-foreground hover:bg-muted lg:hidden"
+      >
+        <Menu className="size-6 [[aria-expanded=true]>&]:hidden" aria-hidden="true" />
+        <X className="hidden size-6 [[aria-expanded=true]>&]:block" aria-hidden="true" />
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-menu" aria-label="Main" hidden class="border-t border-border bg-background lg:hidden">
+    <ul class="container-page flex flex-col py-2">
+      {NAV.map((item) => (
+        <li>
+          <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined} class="block border-b border-border py-4 font-display text-xl font-extrabold uppercase text-foreground no-underline aria-[current=page]:text-primary-strong">{item.label}</a>
+        </li>
+      ))}
+      <li><a href={SITE.trackerUrl} class="block border-b border-border py-4 font-display text-xl font-extrabold uppercase text-foreground no-underline">Retail Tracker ↗</a></li>
+      <li><a href={SITE.memberLoginUrl} class="block py-4 font-semibold text-foreground no-underline">Member login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    if (menu) menu.hidden = !open;
+  });
+</script>

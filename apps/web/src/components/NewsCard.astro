@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { post: CollectionEntry<'news'> }
+const { post } = Astro.props;
+const date = post.data.date.toLocaleDateString('en-SG', { day: 'numeric', month: 'short', year: 'numeric' });
+---
+<article class="group relative flex flex-col gap-3 border-t-4 border-foreground pt-5 transition-colors hover:border-primary">
+  <p class="eyebrow text-muted-foreground">{post.data.category} · <time datetime={post.data.date.toISOString()}>{date}</time></p>
+  <h3 class="font-display text-2xl font-extrabold leading-tight">
+    <a href={`/latest-news/${post.id}`} class="text-foreground no-underline after:absolute after:inset-0 group-hover:text-primary-strong">{post.data.title}</a>
+  </h3>
+  <p class="text-[15px] text-body">{post.data.excerpt}</p>
+  <span class="mt-auto text-[15px] font-bold text-primary-strong" aria-hidden="true">Read more →</span>
+</article>

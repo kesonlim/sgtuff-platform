@@ -1,0 +1,19 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHero from '@/components/PageHero.astro';
+import JoinBand from '@/components/JoinBand.astro';
+---
+<Base title="Business Network" description="The SGTUFF Business Network connects SME operators to share know-how, suppliers and opportunities.">
+  <PageHero eyebrow="Business Network" title="Small alone. Big together." lede="The SGTUFF Business Network connects brick-and-mortar retailers, F&B operators and service providers." />
+  <section class="container-page grid gap-12 py-20 lg:grid-cols-2">
+    <div class="flex flex-col gap-4">
+      <h2 class="font-display text-3xl font-extrabold">Share what works</h2>
+      <p class="text-body">Members swap operational insights, staffing solutions and supplier contacts with people who face the same challenges.</p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h2 class="font-display text-3xl font-extrabold">Buy together</h2>
+      <p class="text-body">By pooling demand, members can access better terms from partners on the things every shop needs.</p>
+    </div>
+  </section>
+  <JoinBand />
+</Base>

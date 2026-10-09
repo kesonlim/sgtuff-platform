@@ -1,0 +1,15 @@
+---
+import Base from '@/layouts/Base.astro';
+import { buttonVariants } from '@/components/ui/button';
+---
+<Base title="Page not found">
+  <section class="container-page flex flex-col items-start gap-6 py-28">
+    <p class="eyebrow text-primary-strong">404</p>
+    <h1 class="font-condensed text-6xl leading-none sm:text-7xl">This unit is vacant.</h1>
+    <p class="max-w-xl text-lg text-body">The page you’re looking for has moved or no longer exists.</p>
+    <div class="flex flex-wrap gap-3">
+      <a href="/" class={buttonVariants({})}>Go home</a>
+      <a href="/latest-news" class={buttonVariants({ variant: 'outline' })}>Browse news</a>
+    </div>
+  </section>
+</Base>

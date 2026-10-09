@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+import { ArrowRight, Landmark, Scale, Users } from 'lucide-react';
+import Base from '@/layouts/Base.astro';
+import LeadForm from '@/components/LeadForm';
+import NewsCard from '@/components/NewsCard.astro';
+import { joinFields } from '@/components/forms';
+import { buttonVariants } from '@/components/ui/button';
+import { SITE } from '@/lib/site';
+
+const posts = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date).slice(0, 3);
+
+const pillars = [
+  { icon: Scale, title: 'Fair Tenancy', body: 'Pushing for full adherence to the Code of Conduct for Leasing of Retail Premises, and training tenants to use it.', href: '/fair-tenancy', cta: 'Read about the Code' },
+  { icon: Users, title: 'Manpower', body: 'Raising the staffing realities of frontline retail, F&B and services with one voice.', href: '/about-us', cta: 'What we stand for' },
+  { icon: Landmark, title: 'Business Network', body: 'Connecting SME operators to share know-how, suppliers and opportunities.', href: '/business-network', cta: 'Explore the network' },
+];
+---
+<Base>
+  <!-- Hero B: join-first split -->
+  <section class="grid lg:grid-cols-[1.15fr_1fr]">
+    <div class="container-page flex w-full flex-col justify-center gap-6 py-14 lg:mr-0 lg:max-w-[700px] lg:py-20 lg:pr-12">
+      <p class="eyebrow self-start bg-accent px-3 py-1.5 text-accent-foreground">For retail, F&amp;B and services SMEs</p>
+      <h1 class="font-condensed text-[52px] leading-[0.9] sm:text-7xl xl:text-[84px]">
+        Your landlord has lawyers. <span class="text-primary">You have us.</span>
+      </h1>
+      <p class="max-w-xl text-lg text-body">
+        SGTUFF is a registered co-operative standing up for frontline SMEs on fair tenancy and manpower. Join in two minutes.
+      </p>
+      <div class="max-w-xl rounded-sm border-t-4 border-primary bg-muted p-5 sm:p-6">
+        <LeadForm
+          client:load
+          endpoint="/api/join"
+          fields={joinFields}
+          submitLabel="Join SGTUFF"
+          successTitle="Welcome aboard."
+          successBody="Thanks for joining. Our team will contact you within a few working days with next steps."
+          footnote="We only use your details to process your membership."
+          turnstileSiteKey={SITE.turnstileSiteKey}
+        />
+      </div>
+    </div>
+    <div class="relative min-h-[360px] bg-[url(/images/skyline.jpeg)] bg-cover bg-bottom lg:min-h-full">
+      <div class="absolute bottom-0 left-0 flex max-w-sm flex-col gap-1.5 bg-primary px-6 py-6 text-primary-foreground sm:px-7">
+        <p class="font-display text-[44px] font-black leading-none">{SITE.mallsTracked} malls</p>
+        <p class="text-[15px]">tracked by the Retail Tenant Tracker. <a href={SITE.trackerUrl} class="font-bold text-primary-foreground underline hover:text-accent">Open it ↗</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof strip -->
+  <section class="border-y border-border">
+    <dl class="container-page grid grid-cols-2 gap-6 py-8 sm:grid-cols-3">
+      <div><dt class="eyebrow text-muted-foreground">Founded</dt><dd class="font-display text-3xl font-black">2020</dd></div>
+      <div><dt class="eyebrow text-muted-foreground">Malls tracked</dt><dd class="font-display text-3xl font-black">{SITE.mallsTracked}</dd></div>
+      <div class="col-span-2 sm:col-span-1"><dt class="eyebrow text-muted-foreground">Registered co-op</dt><dd class="font-display text-3xl font-black">{SITE.regNo}</dd></div>
+    </dl>
+  </section>
+
+  <!-- Pillars -->
+  <section class="container-page flex flex-col gap-10 py-20">
+    <h2 class="font-condensed text-5xl leading-none sm:text-6xl">What we fight for</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      {pillars.map((p) => (
+        <a href={p.href} class="group flex flex-col gap-4 rounded-sm border-2 border-foreground p-7 text-foreground no-underline transition-colors hover:bg-foreground hover:text-background">
+          <p.icon className="size-9 text-primary" aria-hidden="true" />
+          <h3 class="font-display text-2xl font-extrabold">{p.title}</h3>
+          <p class="text-[15px] text-body group-hover:text-ink-soft">{p.body}</p>
+          <span class="mt-auto inline-flex items-center gap-2 font-bold text-primary-strong group-hover:text-accent">{p.cta} <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" /></span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Tracker teaser -->
+  <section class="bg-muted">
+    <div class="container-page grid items-center gap-10 py-20 lg:grid-cols-2">
+      <div class="flex flex-col gap-5">
+        <p class="eyebrow text-primary-strong">Retail Tenant Tracker</p>
+        <h2 class="font-condensed text-5xl leading-[0.92] sm:text-6xl">Every closure tells a story.</h2>
+        <p class="max-w-lg text-lg text-body">We track store openings and closures across {SITE.mallsTracked} Singapore malls, so tenants negotiate with facts, not hunches.</p>
+        <a href={SITE.trackerUrl} class={buttonVariants({ variant: 'outline', size: 'lg', className: 'self-start' })}>Explore the tracker ↗</a>
+      </div>
+      <a href={SITE.trackerUrl} class="block overflow-hidden rounded-md bg-foreground p-8 text-background no-underline hover:text-background" aria-label="Open the Retail Tenant Tracker">
+        <p class="eyebrow mb-6 inline-flex items-center gap-2 rounded-full bg-[#2b2b28] px-3 py-1.5"><span class="size-2 rounded-full bg-accent"></span>Live data</p>
+        <p class="font-condensed text-6xl leading-none sm:text-7xl">{SITE.mallsTracked} malls.</p>
+        <p class="font-condensed text-6xl leading-none text-primary sm:text-7xl">Every move.</p>
+        <p class="mt-6 text-ink-soft">Openings, closures and vacancies, updated as they happen.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="container-page flex flex-col gap-10 py-20">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <h2 class="font-condensed text-5xl leading-none sm:text-6xl">Latest news</h2>
+      <a href="/latest-news" class="font-bold">All news →</a>
+    </div>
+    <div class="grid gap-10 md:grid-cols-3">
+      {posts.map((post) => <NewsCard post={post} />)}
+    </div>
+  </section>
+
+  <!-- Contact band -->
+  <section class="bg-primary text-primary-foreground">
+    <div class="container-page flex flex-col items-start justify-between gap-6 py-14 md:flex-row md:items-center">
+      <div>
+        <h2 class="font-condensed text-4xl leading-none sm:text-5xl">Facing a lease problem?</h2>
+        <p class="mt-2 text-lg">Tell us what’s happening. We’ll point you to the right help.</p>
+      </div>
+      <a href="/contact" class={buttonVariants({ variant: 'outline-inverse', size: 'lg' })}>Talk to us</a>
+    </div>
+  </section>
+</Base>
