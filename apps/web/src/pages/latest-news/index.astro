@@ -2,12 +2,13 @@
 import { getCollection } from 'astro:content';
 import Base from '@/layouts/Base.astro';
 import PageHero from '@/components/PageHero.astro';
+import { PAGES } from '@/lib/site';
 import NewsCard from '@/components/NewsCard.astro';
 
 const posts = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date);
 ---
 <Base title="Latest news" description="News, member benefits and fair tenancy updates from SGTUFF.">
-  <PageHero eyebrow="Latest news" title="What’s happening." lede="Updates on fair tenancy, member benefits and retail movements." />
+  <PageHero eyebrow={PAGES.news.eyebrow} title={PAGES.news.title} lede={PAGES.news.lede} />
   <section class="container-page py-20">
     {posts.length ? (
       <div class="grid gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">

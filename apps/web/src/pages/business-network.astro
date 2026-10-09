@@ -1,10 +1,11 @@
 ---
 import Base from '@/layouts/Base.astro';
 import PageHero from '@/components/PageHero.astro';
+import { PAGES } from '@/lib/site';
 import JoinBand from '@/components/JoinBand.astro';
 ---
 <Base title="Business Network" description="The SGTUFF Business Network connects SME operators to share know-how, suppliers and opportunities.">
-  <PageHero eyebrow="Business Network" title="Small alone. Big together." lede="The SGTUFF Business Network connects brick-and-mortar retailers, F&B operators and service providers." />
+  <PageHero eyebrow={PAGES.businessNetwork.eyebrow} title={PAGES.businessNetwork.title} lede={PAGES.businessNetwork.lede} />
   <section class="container-page grid gap-12 py-20 lg:grid-cols-2">
     <div class="flex flex-col gap-4">
       <h2 class="font-display text-3xl font-extrabold">Share what works</h2>

@@ -2,7 +2,7 @@
 import Base from '@/layouts/Base.astro';
 import PageHero from '@/components/PageHero.astro';
 import JoinBand from '@/components/JoinBand.astro';
-import { SITE } from '@/lib/site';
+import { PAGES, SITE } from '@/lib/site';
 
 const objectives = [
   'Advocate for full adherence to the Code of Conduct for Leasing of Retail Premises in Singapore.',
@@ -12,7 +12,7 @@ const objectives = [
 ];
 ---
 <Base title="About us" description={SITE.mission}>
-  <PageHero eyebrow={`Registered co-operative ${SITE.regNo}`} title="Tenants, united." lede={SITE.mission} />
+  <PageHero eyebrow={PAGES.about.eyebrow} title={PAGES.about.title} lede={PAGES.about.lede} />
 
   <section class="container-page grid gap-12 py-20 lg:grid-cols-2">
     <div class="flex flex-col gap-4">

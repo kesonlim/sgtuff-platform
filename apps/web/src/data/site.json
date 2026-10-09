@@ -1,0 +1,15 @@
+{
+  "email": "info@sgtuff.org.sg",
+  "phone": "+65 8845 6623",
+  "foundedYear": 2020,
+  "mallsTracked": 22,
+  "trackerUrl": "https://tracker.sgtuff.org",
+  "memberLoginUrl": "https://sgtuff.eber.co/sign-in",
+  "mission": "SGTUFF is an advocate for local SME frontline businesses in retail, F&B and services, focusing on fair tenancy and manpower issues.",
+  "socials": [
+    { "label": "Facebook", "href": "https://www.facebook.com/groups/SGtenantsUNITEDforFairness/" },
+    { "label": "Instagram", "href": "https://www.instagram.com/sg.tenants.united.for.fairness/" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/company/sgtuff/" },
+    { "label": "TikTok", "href": "https://www.tiktok.com/@sgtuff2020" }
+  ]
+}

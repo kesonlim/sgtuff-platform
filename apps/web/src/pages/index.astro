@@ -6,7 +6,9 @@ import LeadForm from '@/components/LeadForm';
 import NewsCard from '@/components/NewsCard.astro';
 import { joinFields } from '@/components/forms';
 import { buttonVariants } from '@/components/ui/button';
-import { SITE } from '@/lib/site';
+import { PAGES, SITE } from '@/lib/site';
+
+const hero = PAGES.home;
 
 const posts = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date).slice(0, 3);
 
@@ -20,13 +22,11 @@ const pillars = [
   <!-- Hero B: join-first split -->
   <section class="grid lg:grid-cols-[1.15fr_1fr]">
     <div class="container-page flex w-full flex-col justify-center gap-6 py-14 lg:mr-0 lg:max-w-[700px] lg:py-20 lg:pr-12">
-      <p class="eyebrow self-start bg-accent px-3 py-1.5 text-accent-foreground">For retail, F&amp;B and services SMEs</p>
+      <p class="eyebrow self-start bg-accent px-3 py-1.5 text-accent-foreground">{hero.badge}</p>
       <h1 class="font-condensed text-[52px] leading-[0.9] sm:text-7xl xl:text-[84px]">
-        Your landlord has lawyers. <span class="text-primary">You have us.</span>
+        {hero.title} <span class="text-primary">{hero.highlight}</span>
       </h1>
-      <p class="max-w-xl text-lg text-body">
-        SGTUFF is a registered co-operative standing up for frontline SMEs on fair tenancy and manpower. Join in two minutes.
-      </p>
+      <p class="max-w-xl text-lg text-body">{hero.lede}</p>
       <div class="max-w-xl rounded-sm border-t-4 border-primary bg-muted p-5 sm:p-6">
         <LeadForm
           client:load
@@ -51,7 +51,7 @@ const pillars = [
   <!-- Proof strip -->
   <section class="border-y border-border">
     <dl class="container-page grid grid-cols-2 gap-6 py-8 sm:grid-cols-3">
-      <div><dt class="eyebrow text-muted-foreground">Founded</dt><dd class="font-display text-3xl font-black">2020</dd></div>
+      <div><dt class="eyebrow text-muted-foreground">Founded</dt><dd class="font-display text-3xl font-black">{SITE.foundedYear}</dd></div>
       <div><dt class="eyebrow text-muted-foreground">Malls tracked</dt><dd class="font-display text-3xl font-black">{SITE.mallsTracked}</dd></div>
       <div class="col-span-2 sm:col-span-1"><dt class="eyebrow text-muted-foreground">Registered co-op</dt><dd class="font-display text-3xl font-black">{SITE.regNo}</dd></div>
     </dl>

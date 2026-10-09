@@ -4,10 +4,10 @@ import Base from '@/layouts/Base.astro';
 import PageHero from '@/components/PageHero.astro';
 import LeadForm from '@/components/LeadForm';
 import { contactFields } from '@/components/forms';
-import { SITE } from '@/lib/site';
+import { PAGES, SITE } from '@/lib/site';
 ---
 <Base title="Contact" description="Contact SGTUFF about tenancy issues, membership or partnerships.">
-  <PageHero eyebrow="Contact" title="Talk to us." lede="Questions about your lease, membership or working with us? We’re here." />
+  <PageHero eyebrow={PAGES.contact.eyebrow} title={PAGES.contact.title} lede={PAGES.contact.lede} />
   <section class="container-page grid gap-12 py-20 lg:grid-cols-[1fr_1.3fr]">
     <div class="flex flex-col gap-5">
       <a href={`mailto:${SITE.email}`} class="flex items-center gap-3 text-lg font-semibold"><Mail className="size-5 text-primary" aria-hidden="true" />{SITE.email}</a>

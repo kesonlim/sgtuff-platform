@@ -3,10 +3,10 @@ import Base from '@/layouts/Base.astro';
 import PageHero from '@/components/PageHero.astro';
 import LeadForm from '@/components/LeadForm';
 import { collaborateFields } from '@/components/forms';
-import { SITE } from '@/lib/site';
+import { PAGES, SITE } from '@/lib/site';
 ---
 <Base title="Collaborate with us" description="Partner with SGTUFF: agencies, landlords, trade associations, media and technology providers.">
-  <PageHero eyebrow="Collaborate" title="Let’s build fairer retail." lede="We work with government agencies, landlords, trade associations, media and technology providers." />
+  <PageHero eyebrow={PAGES.collaborate.eyebrow} title={PAGES.collaborate.title} lede={PAGES.collaborate.lede} />
   <section class="container-page grid gap-12 py-20 lg:grid-cols-[1fr_1.3fr]">
     <div class="flex flex-col gap-4">
       <h2 class="font-display text-3xl font-extrabold">Partner with SGTUFF</h2>

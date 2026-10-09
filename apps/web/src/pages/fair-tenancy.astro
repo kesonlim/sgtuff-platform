@@ -1,11 +1,12 @@
 ---
 import Base from '@/layouts/Base.astro';
 import PageHero from '@/components/PageHero.astro';
+import { PAGES } from '@/lib/site';
 import JoinBand from '@/components/JoinBand.astro';
 import { buttonVariants } from '@/components/ui/button';
 ---
 <Base title="Fair Tenancy" description="SGTUFF's work on the Code of Conduct for Leasing of Retail Premises, and our WSQ Fair Tenancy training course.">
-  <PageHero eyebrow="Fair Tenancy" title="A fair lease is not a favour." lede="The Code of Conduct for Leasing of Retail Premises sets the ground rules for retail leases in Singapore. We help tenants know it and use it." />
+  <PageHero eyebrow={PAGES.fairTenancy.eyebrow} title={PAGES.fairTenancy.title} lede={PAGES.fairTenancy.lede} />
 
   <section class="container-page grid gap-12 py-20 lg:grid-cols-2">
     <div class="flex flex-col gap-4">

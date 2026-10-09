@@ -3,16 +3,12 @@ import { Check } from 'lucide-react';
 import Base from '@/layouts/Base.astro';
 import PageHero from '@/components/PageHero.astro';
 import { buttonVariants } from '@/components/ui/button';
-import { SITE } from '@/lib/site';
+import { PAGES, SITE } from '@/lib/site';
 
-const tiers = [
-  { name: 'Ordinary member', for: 'SME owners in retail, F&B, wellness and services.', perks: ['Voting rights at the AGM', 'Lease benchmarks and guidance', 'Member benefits and programmes'], cta: { label: 'Join now', href: '/join' }, featured: true },
-  { name: 'Associate member', for: 'Aspiring entrepreneurs, retail managers and industry professionals.', perks: ['Fair Tenancy workshops', 'Networking events', 'Retail movement updates'], cta: { label: 'Join now', href: '/join' } },
-  { name: 'Corporate partner', for: 'Service providers, technology vendors, law firms and sponsors.', perks: ['Listing in the Business Network', 'Sponsorship opportunities', 'Reach SME operators directly'], cta: { label: 'Partner with us', href: '/collaborate' } },
-];
+const tiers = PAGES.membership.tiers;
 ---
 <Base title="Membership" description="Join SGTUFF, Singapore's co-operative for SME tenants in retail, F&B and services.">
-  <PageHero eyebrow="Membership" title="Stronger together." lede="Pick the membership that fits you. Already a member? Log in to the member portal.">
+  <PageHero eyebrow={PAGES.membership.eyebrow} title={PAGES.membership.title} lede={PAGES.membership.lede}>
     <a href={SITE.memberLoginUrl} class={buttonVariants({ variant: 'outline', className: 'self-start' })}>Member login ↗</a>
   </PageHero>
 
@@ -26,7 +22,7 @@ const tiers = [
             <li class="flex gap-3"><Check className="mt-1 size-5 shrink-0 text-primary" aria-hidden="true" />{p}</li>
           ))}
         </ul>
-        <a href={t.cta.href} class={buttonVariants({ variant: t.featured ? 'primary' : 'outline', className: 'mt-auto' })}>{t.cta.label}</a>
+        <a href={t.ctaHref} class={buttonVariants({ variant: t.featured ? 'primary' : 'outline', className: 'mt-auto' })}>{t.ctaLabel}</a>
       </div>
     ))}
   </section>
