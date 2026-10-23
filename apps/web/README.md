@@ -9,7 +9,13 @@ npm run dev -w sgtuff-web
 npm run build -w sgtuff-web   # astro check + build → apps/web/dist
 ```
 
+## Deploys
+Every merge to `main` that touches `apps/web/` (including CMS **Publish**) rebuilds the site and deploys it to the `sgtuff-web` Cloudflare Pages project, live at https://sgtuff-web.pages.dev. The workflow is `.github/workflows/deploy-web.yml`; you can also run it by hand from the Actions tab.
+
+It needs two repo secrets (GitHub → Settings → Secrets and variables → Actions): `CLOUDFLARE_API_TOKEN` (a token with **Cloudflare Pages: Edit** permission) and `CLOUDFLARE_ACCOUNT_ID`.
+
 ## Cloudflare Pages project
+The project already exists, so these settings are for reference. Set the variables and secrets under Pages → `sgtuff-web` → Settings.
 | Setting | Value |
 |---|---|
 | Root directory | `apps/web` |
