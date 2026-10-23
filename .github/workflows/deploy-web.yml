@@ -1,0 +1,46 @@
+name: Deploy SGTUFF website to Cloudflare Pages
+
+# Every merge to main that touches the site (including CMS "Publish")
+# rebuilds it and deploys to the sgtuff-web Pages project.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'apps/web/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy-web.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-web
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build:web
+
+      - name: Deploy to Cloudflare Pages
+        working-directory: apps/web
+        run: npx wrangler pages deploy dist --project-name sgtuff-web --branch main --commit-hash "$GITHUB_SHA" --commit-message "${GITHUB_SHA::7}"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
