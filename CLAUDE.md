@@ -14,4 +14,4 @@ This repo holds SGTUFF's web apps, including the new www.sgtuff.org site in `app
 
 - Terence Yow is Chairman and holds the Fair Tenancy Industry Committee appointment.
 - SGTUFF is a registered co-operative society, not a statutory body. Do not claim official ministry partnerships.
-- Date any membership figures.
+- Member count: use only this baseline, verbatim: "Representing over 1,000 frontline retail, F&B, and service business owners across Singapore." Do not add brand, outlet or floor-area numbers.
