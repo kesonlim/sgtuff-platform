@@ -1,0 +1,472 @@
+[
+ {
+  "id": 100013,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/bank-loan/",
+  "name": "bank loan",
+  "slug": "bank-loan",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100013",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100013"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100013"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100007,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/coc-for-leasing-of-retail-premises/",
+  "name": "COC for Leasing of Retail Premises",
+  "slug": "coc-for-leasing-of-retail-premises",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100007",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100007"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100007"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100009,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/code-of-conduct-for-leasing/",
+  "name": "Code of Conduct for Leasing",
+  "slug": "code-of-conduct-for-leasing",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100009",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100009"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100009"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100010,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/commercial-lease-agreements-singapore/",
+  "name": "Commercial lease agreements Singapore",
+  "slug": "commercial-lease-agreements-singapore",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100010",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100010"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100010"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100006,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/fair-tenancy-practices/",
+  "name": "Fair tenancy practices",
+  "slug": "fair-tenancy-practices",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100006",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100006"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100006"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100012,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/landlord-and-tenant-rights/",
+  "name": "Landlord and tenant rights",
+  "slug": "landlord-and-tenant-rights",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100012",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100012"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100012"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100005,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/leasing-best-practices-singapore/",
+  "name": "Leasing best practices Singapore",
+  "slug": "leasing-best-practices-singapore",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100005",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100005"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100005"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100011,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/retail-leasing-course/",
+  "name": "Retail leasing course",
+  "slug": "retail-leasing-course",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100011",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100011"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100011"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100008,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/retail-leasing-singapore/",
+  "name": "Retail leasing Singapore",
+  "slug": "retail-leasing-singapore",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100008",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100008"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100008"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100014,
+  "count": 1,
+  "description": "",
+  "link": "https://sgtuff.org.sg/tag/smes-struggle/",
+  "name": "SMEs struggle",
+  "slug": "smes-struggle",
+  "taxonomy": "post_tag",
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags/100014",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/tags"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/taxonomies/post_tag"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/posts?tags=100014"
+    },
+    {
+     "href": "https://sgtuff.org.sg/wp-json/wp/v2/portfolio?tags=100014"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]
