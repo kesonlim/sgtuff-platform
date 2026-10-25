@@ -1,114 +1,223 @@
 ---
 import { getCollection } from 'astro:content';
-import { ArrowRight, Landmark, Scale, Users } from 'lucide-react';
+import { ArrowRight, Building2, FileCheck2, Handshake, Megaphone, Scale, Store } from 'lucide-react';
 import Base from '@/layouts/Base.astro';
-import LeadForm from '@/components/LeadForm';
 import NewsCard from '@/components/NewsCard.astro';
-import { joinFields } from '@/components/forms';
 import { buttonVariants } from '@/components/ui/button';
 import { PAGES, SITE } from '@/lib/site';
 
 const hero = PAGES.home;
-
+const tiers = PAGES.membership.tiers;
 const posts = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date).slice(0, 3);
 
+const doorways = [
+  { icon: Store, title: 'I run a business', body: `Get backed on your next lease, alongside ${SITE.stats.owners} owners.`, cta: 'See membership', href: '/membership' },
+  { icon: Building2, title: "I'm a landlord, agency or reporter", body: "Who we represent, what we've helped change, and how to reach us.", cta: 'Our story and wins', href: '/about-us' },
+  { icon: Handshake, title: 'I want to partner', body: `Reach the owners of ${SITE.stats.brands} brands with offers they actually need.`, cta: 'Partner with us', href: '/collaborate' },
+];
+
 const pillars = [
-  { icon: Scale, title: 'Fair Tenancy', body: 'Pushing for full adherence to the Code of Conduct for Leasing of Retail Premises, and training tenants to use it.', href: '/fair-tenancy', cta: 'Read about the Code' },
-  { icon: Users, title: 'Manpower', body: 'Raising the staffing realities of frontline retail, F&B and services with one voice.', href: '/about-us', cta: 'What we stand for' },
-  { icon: Landmark, title: 'Business Network', body: 'Connecting SME operators to share know-how, suppliers and opportunities.', href: '/business-network', cta: 'Explore the network' },
+  { icon: Megaphone, title: 'Voice', body: "Tenants have a say when the rules are written. We bring owners' real cases to landlords, trade bodies and policymakers.", get: 'a vote at the AGM and a say in what we push for next.' },
+  { icon: Scale, title: 'Leverage', body: `${SITE.stats.owners} owners negotiate better than one. We pool our scale for shared services and partner deals.`, get: 'member-only rates from vetted partners, plus TUFF Rent Benchmarks.' },
+  { icon: FileCheck2, title: 'Know-how', body: 'Know your lease before you sign. The Code of Conduct in plain English, lease reviews and training.', get: "your lease reviewed by a TUFF Lease Mentor, an operator who's been there." },
+];
+
+const wins = [
+  { when: '2020', title: 'Pushed for COVID rental relief', body: 'Owners came together in February 2020 to press for rent relief for tenants hit by the pandemic.' },
+  { when: '2020–21', title: 'Helped shape the Code of Conduct', body: "Brought tenants' real cases to the talks that produced the Code of Conduct for Leasing of Retail Premises." },
+  { when: '2021–now', title: 'A tenant voice on the FTIC', body: 'Our Chairman, Terence Yow, serves on the Fair Tenancy Industry Committee, which looks after the Code.' },
+];
+
+const faqs = [
+  { q: 'Who can join?', a: 'Any owner or operator of a retail, F&B or services business in Singapore.' },
+  { q: 'What does "co-op" mean for me?', a: "You're a part-owner, not a customer. Members elect the committee and set our priorities." },
+  { q: 'Is SGTUFF against landlords?', a: 'No. We push for fair, balanced leases that keep shops open and malls full.' },
+  { q: 'Is a mentor review legal advice?', a: 'No. Mentors are experienced operators who share practical, commercial know-how. For legal advice, we refer you to our partner lawyers at a member rate.' },
+];
+
+const heroShots = [
+  { label: 'Owner at their counter', span: true },
+  { label: 'F&B owner at work', span: false },
+  { label: 'Salon or studio owner', span: false },
 ];
 ---
-<Base>
-  <!-- Hero B: join-first split -->
-  <section class="grid lg:grid-cols-[1.15fr_1fr]">
-    <div class="container-page flex w-full flex-col justify-center gap-6 py-14 lg:mr-0 lg:max-w-[700px] lg:py-20 lg:pr-12">
-      <p class="eyebrow self-start bg-accent px-3 py-1.5 text-accent-foreground">{hero.badge}</p>
-      <h1 class="font-condensed text-[52px] leading-[0.9] sm:text-7xl xl:text-[84px]">
-        {hero.title} <span class="text-primary">{hero.highlight}</span>
-      </h1>
-      <p class="max-w-xl text-lg text-body">{hero.lede}</p>
-      <div class="max-w-xl rounded-sm border-t-4 border-primary bg-muted p-5 sm:p-6">
-        <LeadForm
-          client:load
-          endpoint="/api/join"
-          fields={joinFields}
-          submitLabel="Join SGTUFF"
-          successTitle="Welcome aboard."
-          successBody="Thanks for joining. Our team will contact you within a few working days with next steps."
-          footnote="We only use your details to process your membership."
-          turnstileSiteKey={SITE.turnstileSiteKey}
-        />
+<Base description={SITE.mission}>
+  <!-- 1. Hero A: real members -->
+  <section class="container-page grid items-center gap-12 pb-10 pt-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-14 lg:pt-16">
+    <div class="flex flex-col gap-6">
+      <p class="eyebrow text-muted-foreground">{hero.badge}</p>
+      <h1 class="font-display text-[44px] font-extrabold leading-[0.98] tracking-[-0.02em] sm:text-6xl xl:text-[76px]">{hero.title}</h1>
+      <p class="max-w-[34ch] text-xl leading-snug text-body">{hero.lede}</p>
+      <div class="flex flex-wrap items-center gap-3">
+        <a href="/join" class={buttonVariants({ size: 'lg' })}>Join the co-op</a>
+        <a href="/fair-tenancy" class={buttonVariants({ variant: 'outline', size: 'lg', className: 'text-base' })}>Know your lease rights</a>
       </div>
     </div>
-    <div class="relative min-h-[360px] bg-[url(/images/skyline.jpeg)] bg-cover bg-bottom lg:min-h-full">
-      <div class="absolute bottom-0 left-0 flex max-w-sm flex-col gap-1.5 bg-primary px-6 py-6 text-primary-foreground sm:px-7">
-        <p class="font-display text-[44px] font-black leading-none">{SITE.mallsTracked} malls</p>
-        <p class="text-[15px]">tracked by the Retail Tenant Tracker. <a href={SITE.trackerUrl} class="font-bold text-primary-foreground underline hover:text-accent">Open it ↗</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Proof strip -->
-  <section class="border-y border-border">
-    <dl class="container-page grid grid-cols-2 gap-6 py-8 sm:grid-cols-3">
-      <div><dt class="eyebrow text-muted-foreground">Founded</dt><dd class="font-display text-3xl font-black">{SITE.foundedYear}</dd></div>
-      <div><dt class="eyebrow text-muted-foreground">Malls tracked</dt><dd class="font-display text-3xl font-black">{SITE.mallsTracked}</dd></div>
-      <div class="col-span-2 sm:col-span-1"><dt class="eyebrow text-muted-foreground">Registered co-op</dt><dd class="font-display text-3xl font-black">{SITE.regNo}</dd></div>
-    </dl>
-  </section>
-
-  <!-- Pillars -->
-  <section class="container-page flex flex-col gap-10 py-20">
-    <h2 class="font-condensed text-5xl leading-none sm:text-6xl">What we fight for</h2>
-    <div class="grid gap-6 md:grid-cols-3">
-      {pillars.map((p) => (
-        <a href={p.href} class="group flex flex-col gap-4 rounded-sm border-2 border-foreground p-7 text-foreground no-underline transition-colors hover:bg-foreground hover:text-background">
-          <p.icon className="size-9 text-primary" aria-hidden="true" />
-          <h3 class="font-display text-2xl font-extrabold">{p.title}</h3>
-          <p class="text-[15px] text-body group-hover:text-ink-soft">{p.body}</p>
-          <span class="mt-auto inline-flex items-center gap-2 font-bold text-primary-strong group-hover:text-accent">{p.cta} <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" /></span>
-        </a>
+    <div class="grid grid-cols-[1.2fr_1fr] grid-rows-[180px_180px] gap-3 sm:grid-rows-[240px_240px] sm:gap-4">
+      {heroShots.map((s) => (
+        <figure class:list={['relative m-0 flex items-center justify-center overflow-hidden rounded-md bg-photo', s.span && 'row-span-2']}>
+          <span class="px-4 text-center text-[13px] text-muted-foreground">Member photo<br />{s.label}</span>
+          <figcaption class="absolute bottom-3 left-3 hidden rounded-[8px] bg-background px-3 py-1.5 text-[13px] text-muted-foreground sm:block">Coming soon: a real member</figcaption>
+        </figure>
       ))}
     </div>
   </section>
 
-  <!-- Tracker teaser -->
-  <section class="bg-muted">
-    <div class="container-page grid items-center gap-10 py-20 lg:grid-cols-2">
-      <div class="flex flex-col gap-5">
-        <p class="eyebrow text-primary-strong">Retail Tenant Tracker</p>
-        <h2 class="font-condensed text-5xl leading-[0.92] sm:text-6xl">Every closure tells a story.</h2>
-        <p class="max-w-lg text-lg text-body">We track store openings and closures across {SITE.mallsTracked} Singapore malls, so tenants negotiate with facts, not hunches.</p>
-        <a href={SITE.trackerUrl} class={buttonVariants({ variant: 'outline', size: 'lg', className: 'self-start' })}>Explore the tracker ↗</a>
-      </div>
-      <a href={SITE.trackerUrl} class="block overflow-hidden rounded-md bg-foreground p-8 text-background no-underline hover:text-background" aria-label="Open the Retail Tenant Tracker">
-        <p class="eyebrow mb-6 inline-flex items-center gap-2 rounded-full bg-[#2b2b28] px-3 py-1.5"><span class="size-2 rounded-full bg-accent"></span>Live data</p>
-        <p class="font-condensed text-6xl leading-none sm:text-7xl">{SITE.mallsTracked} malls.</p>
-        <p class="font-condensed text-6xl leading-none text-primary sm:text-7xl">Every move.</p>
-        <p class="mt-6 text-ink-soft">Openings, closures and vacancies, updated as they happen.</p>
-      </a>
+  <!-- 2. Proof strip -->
+  <section aria-label="Who we represent" class="container-page pb-14">
+    <dl class="flex flex-wrap items-center gap-x-12 gap-y-4 border-t border-border pt-7">
+      <div class="flex items-baseline gap-2"><dt class="sr-only">Business owners</dt><dd class="font-display text-4xl font-extrabold leading-none">{SITE.stats.owners}</dd><span aria-hidden="true" class="text-body">business owners</span></div>
+      <div class="flex items-baseline gap-2"><dt class="sr-only">Brands</dt><dd class="font-display text-4xl font-extrabold leading-none">{SITE.stats.brands}</dd><span aria-hidden="true" class="text-body">brands</span></div>
+      <div class="flex items-baseline gap-2"><dt class="sr-only">Outlets</dt><dd class="font-display text-4xl font-extrabold leading-none">{SITE.stats.outlets}</dd><span aria-hidden="true" class="text-body">outlets</span></div>
+      <p class="text-[13px] text-muted-foreground sm:ml-auto">As of {SITE.stats.asOf}</p>
+    </dl>
+    <div class="mt-7 flex flex-wrap items-center gap-x-8 gap-y-3">
+      <p class="eyebrow text-muted-foreground">We work with</p>
+      {SITE.workWith.map((w) => <p class="text-[14px] font-semibold text-muted-foreground">{w}</p>)}
     </div>
+  </section>
+
+  <!-- 3. Doorways -->
+  <section class="border-y border-border bg-surface">
+    <div class="container-page flex flex-col gap-8 py-16 lg:py-20">
+      <h2 class="font-display text-4xl font-bold leading-tight">Where do you fit in?</h2>
+      <div class="grid gap-5 md:grid-cols-3">
+        {doorways.map((d) => (
+          <a href={d.href} class="group flex flex-col gap-3 rounded-md border border-border bg-background p-7 text-foreground no-underline transition duration-150 hover:-translate-y-0.5 hover:border-foreground hover:text-foreground">
+            <d.icon className="size-7 text-primary" strokeWidth={1.5} aria-hidden="true" />
+            <h3 class="text-[22px] font-semibold leading-tight">{d.title}</h3>
+            <p class="text-body">{d.body}</p>
+            <span class="mt-auto inline-flex items-center gap-1.5 pt-2 font-semibold text-primary-strong">{d.cta} <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Pillars -->
+  <section class="container-page flex flex-col gap-10 py-20 lg:py-24">
+    <div class="flex max-w-3xl flex-col gap-3">
+      <p class="eyebrow text-muted-foreground">What members get</p>
+      <h2 class="font-display text-4xl font-bold leading-[1.05] sm:text-[44px]">Small alone. <span class="marker">Tough together.</span></h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      {pillars.map((p) => (
+        <div class="flex flex-col gap-3 rounded-md border border-border bg-surface p-8">
+          <p.icon className="size-8 text-foreground" strokeWidth={1.5} aria-hidden="true" />
+          <h3 class="text-[22px] font-semibold">{p.title}</h3>
+          <p class="text-body">{p.body}</p>
+          <p class="mt-auto border-t border-border pt-3 text-[14px] text-muted-foreground"><strong class="text-foreground">You get:</strong> {p.get}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 5. Wins -->
+  <section class="bg-foreground text-background">
+    <div class="container-page flex flex-col gap-10 py-20 lg:py-24">
+      <div class="flex max-w-3xl flex-col gap-3">
+        <p class="eyebrow text-ink-soft">Wins since 2020</p>
+        <h2 class="font-display text-4xl font-bold leading-[1.05] sm:text-[44px]">It started as a group chat in February 2020. Now tenants have a voice at the table.</h2>
+      </div>
+      <ol class="grid gap-8 md:grid-cols-3">
+        {wins.map((w, i) => (
+          <li class:list={['flex flex-col gap-2 border-t-[3px] pt-5', i === 0 ? 'border-primary' : 'border-background']}>
+            <p class="font-mono text-[14px] text-ink-soft">{w.when}</p>
+            <h3 class="text-[22px] font-semibold leading-snug">{w.title}</h3>
+            <p class="text-ink-soft">{w.body}</p>
+          </li>
+        ))}
+      </ol>
+      <a href="/about-us" class={buttonVariants({ variant: 'outline-inverse', className: 'self-start' })}>Read our story</a>
+    </div>
+  </section>
+
+  <!-- 6. Tools -->
+  <section class="container-page grid gap-6 py-20 lg:grid-cols-2 lg:py-24">
+    <div class="flex flex-col gap-4 rounded-md border border-border bg-surface p-8 sm:p-10">
+      <p class="eyebrow inline-flex items-center gap-2 self-start text-muted-foreground"><span class="size-2 rounded-full bg-success"></span>Live · Retail Tenant Tracker</p>
+      <h2 class="font-display text-3xl font-bold leading-tight sm:text-4xl">Negotiate with facts, not hunches.</h2>
+      <p class="text-lg text-body">We track store openings, closures and vacancies across {SITE.mallsTracked} Singapore malls, so you know how a mall is really doing before you sign.</p>
+      <a href={SITE.trackerUrl} class={buttonVariants({ variant: 'outline', size: 'lg', className: 'mt-auto self-start text-base' })}>Open the tracker ↗</a>
+    </div>
+    <div class="flex flex-col gap-4 rounded-md bg-muted p-8 sm:p-10">
+      <p class="eyebrow self-start rounded-sm bg-accent px-2 py-1 text-accent-foreground">Coming soon · Lease Health Check</p>
+      <h2 class="font-display text-3xl font-bold leading-tight sm:text-4xl">Is your lease fair? Find out in 2 minutes.</h2>
+      <p class="text-lg text-body">10 yes-or-no questions, checked against the Code of Conduct. A red, amber or green score with plain-English next steps.</p>
+      <a href="/fair-tenancy" class="mt-auto inline-flex items-center gap-1.5 self-start font-semibold">Meanwhile, read the Code in plain English <ArrowRight className="size-4" aria-hidden="true" /></a>
+    </div>
+  </section>
+
+  <!-- 7. Member faces -->
+  <section class="border-y border-border bg-surface">
+    <div class="container-page flex flex-col gap-10 py-20 lg:py-24">
+      <h2 class="font-display text-4xl font-bold leading-tight sm:text-[44px]">Owners like you, already in.</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        {[1, 2, 3].map(() => (
+          <figure class="m-0 flex flex-col gap-4">
+            <div class="flex aspect-[4/3] items-center justify-center rounded-md bg-photo text-[14px] text-muted-foreground">Member photo, in their shop</div>
+            <figcaption class="text-[14px] text-muted-foreground">Member stories are coming soon. <a href="/join">Join to be featured.</a></figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Membership -->
+  <section class="container-page flex flex-col gap-10 py-20 lg:py-24">
+    <div class="flex flex-col gap-3">
+      <p class="eyebrow text-muted-foreground">Membership</p>
+      <h2 class="font-display text-4xl font-bold leading-tight sm:text-[44px]">Pick how you join.</h2>
+    </div>
+    <div class="grid items-stretch gap-6 md:grid-cols-3">
+      {tiers.map((t) => (
+        <div class:list={['flex flex-col gap-4 rounded-md bg-surface p-8', t.featured ? 'border-2 border-primary' : 'border border-border']}>
+          <div class="flex items-center justify-between gap-3">
+            <h3 class="text-[22px] font-semibold">{t.name}</h3>
+            {t.featured && <p class="eyebrow rounded-sm bg-accent px-2 py-1 text-accent-foreground">Most popular</p>}
+          </div>
+          <p><span class="font-display text-5xl font-extrabold leading-none">{t.price}</span> <span class="text-muted-foreground">{t.per}</span></p>
+          <p class="text-[15px] text-muted-foreground">{t.for}</p>
+          <ul class="flex list-disc flex-col gap-1.5 pl-5 text-body">
+            {t.perks.map((p) => <li>{p}</li>)}
+          </ul>
+          <a href={t.ctaHref} class={buttonVariants({ variant: t.featured ? 'primary' : 'outline', className: 'mt-auto w-full' })}>{t.ctaLabel}</a>
+        </div>
+      ))}
+    </div>
+    <dl class="grid gap-x-8 gap-y-6 md:grid-cols-2">
+      {faqs.map((f) => (
+        <div class="border-t border-border pt-4">
+          <dt class="font-semibold">{f.q}</dt>
+          <dd class="mt-1.5 text-body">{f.a}</dd>
+        </div>
+      ))}
+    </dl>
   </section>
 
   <!-- News -->
-  <section class="container-page flex flex-col gap-10 py-20">
-    <div class="flex flex-wrap items-end justify-between gap-4">
-      <h2 class="font-condensed text-5xl leading-none sm:text-6xl">Latest news</h2>
-      <a href="/latest-news" class="font-bold">All news →</a>
-    </div>
-    <div class="grid gap-10 md:grid-cols-3">
-      {posts.map((post) => <NewsCard post={post} />)}
-    </div>
-  </section>
-
-  <!-- Contact band -->
-  <section class="bg-primary text-primary-foreground">
-    <div class="container-page flex flex-col items-start justify-between gap-6 py-14 md:flex-row md:items-center">
-      <div>
-        <h2 class="font-condensed text-4xl leading-none sm:text-5xl">Facing a lease problem?</h2>
-        <p class="mt-2 text-lg">Tell us what’s happening. We’ll point you to the right help.</p>
+  {posts.length > 0 && (
+    <section class="border-t border-border">
+      <div class="container-page flex flex-col gap-10 py-20">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <h2 class="font-display text-4xl font-bold leading-tight">Latest news</h2>
+          <a href="/latest-news" class="font-semibold">All news →</a>
+        </div>
+        <div class="grid gap-10 md:grid-cols-3">
+          {posts.map((post) => <NewsCard post={post} />)}
+        </div>
       </div>
-      <a href="/contact" class={buttonVariants({ variant: 'outline-inverse', size: 'lg' })}>Talk to us</a>
+    </section>
+  )}
+
+  <!-- 9. Final call to action -->
+  <section class="bg-primary text-primary-foreground">
+    <div class="container-page flex flex-col items-start justify-between gap-8 py-16 md:flex-row md:items-center lg:py-20">
+      <div class="flex flex-col gap-3">
+        <h2 class="font-display text-[40px] font-extrabold leading-none tracking-[-0.02em] sm:text-6xl">No tenant negotiates alone.</h2>
+        <p class="text-xl">Join {SITE.stats.owners} owners who have each other's backs.</p>
+      </div>
+      <a href="/join" class="inline-flex h-14 items-center rounded-md bg-foreground px-8 text-lg font-semibold text-background no-underline hover:bg-[#2B2D31] hover:text-background">Join the co-op</a>
     </div>
   </section>
 </Base>

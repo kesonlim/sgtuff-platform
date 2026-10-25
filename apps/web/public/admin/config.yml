@@ -91,6 +91,8 @@ collections:
                 summary: "{{fields.name}}"
                 fields:
                   - { label: Name, name: name, widget: string }
+                  - { label: Price, name: price, widget: string, hint: "e.g. $199" }
+                  - { label: Price period, name: per, widget: string, hint: "e.g. a year, one-off" }
                   - { label: Who it's for, name: for, widget: text }
                   - { label: Perks, name: perks, widget: list, field: { label: Perk, name: perk, widget: string } }
                   - { label: Button label, name: ctaLabel, widget: string }

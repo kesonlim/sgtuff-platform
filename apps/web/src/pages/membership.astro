@@ -14,8 +14,9 @@ const tiers = PAGES.membership.tiers;
 
   <section class="container-page grid gap-6 py-20 md:grid-cols-3">
     {tiers.map((t) => (
-      <div class:list={['flex flex-col gap-5 rounded-md p-8', t.featured ? 'bg-foreground text-background' : 'border-2 border-foreground']}>
-        <h2 class="font-display text-2xl font-extrabold">{t.name}</h2>
+      <div class:list={['flex flex-col gap-5 rounded-md p-8', t.featured ? 'bg-foreground text-background' : 'border border-border bg-surface']}>
+        <h2 class="font-display text-2xl font-bold">{t.name}</h2>
+        <p><span class="font-display text-5xl font-extrabold leading-none">{t.price}</span> <span class:list={[t.featured ? 'text-ink-soft' : 'text-muted-foreground']}>{t.per}</span></p>
         <p class:list={[t.featured ? 'text-ink-soft' : 'text-body']}>{t.for}</p>
         <ul class="flex flex-col gap-3">
           {t.perks.map((p) => (

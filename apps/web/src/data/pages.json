@@ -1,9 +1,9 @@
 {
   "home": {
-    "badge": "For retail, F&B and services SMEs",
-    "title": "Your landlord has lawyers.",
-    "highlight": "You have us.",
-    "lede": "SGTUFF is a registered co-operative standing up for frontline SMEs on fair tenancy and manpower. Join in two minutes."
+    "badge": "Singapore's tenant co-op · since 2020",
+    "title": "No tenant negotiates alone.",
+    "highlight": "",
+    "lede": "The co-operative owned by Singapore's frontline businesses: the shops, eateries and studios that keep our malls alive."
   },
   "about": {
     "eyebrow": "Registered co-operative CS000438",
@@ -17,12 +17,57 @@
   },
   "membership": {
     "eyebrow": "Membership",
-    "title": "Stronger together.",
-    "lede": "Pick the membership that fits you. Already a member? Log in to the member portal.",
+    "title": "Pick how you join.",
+    "lede": "Every tier makes the co-op stronger. Already a member? Log in to the member portal.",
     "tiers": [
-      { "name": "Ordinary member", "for": "SME owners in retail, F&B, wellness and services.", "perks": ["Voting rights at the AGM", "Lease benchmarks and guidance", "Member benefits and programmes"], "ctaLabel": "Join now", "ctaHref": "/join", "featured": true },
-      { "name": "Associate member", "for": "Aspiring entrepreneurs, retail managers and industry professionals.", "perks": ["Fair Tenancy workshops", "Networking events", "Retail movement updates"], "ctaLabel": "Join now", "ctaHref": "/join", "featured": false },
-      { "name": "Corporate partner", "for": "Service providers, technology vendors, law firms and sponsors.", "perks": ["Listing in the Business Network", "Sponsorship opportunities", "Reach SME operators directly"], "ctaLabel": "Partner with us", "ctaHref": "/collaborate", "featured": false }
+      {
+        "name": "Member",
+        "price": "$50",
+        "per": "one-off",
+        "for": "Any owner or operator of a retail, F&B or services business.",
+        "perks": [
+          "Vote at the AGM",
+          "Member WhatsApp community",
+          "Full Lease Health Check report and Tenant Playbook",
+          "Partner offers directory",
+          "\"SGTUFF member\" window decal"
+        ],
+        "ctaLabel": "Join as Member",
+        "ctaHref": "/join",
+        "featured": false
+      },
+      {
+        "name": "Associate",
+        "price": "$199",
+        "per": "a year",
+        "for": "Owners with a lease to protect.",
+        "perks": [
+          "Everything in Member",
+          "1 lease review a year by a TUFF Lease Mentor",
+          "TUFF Rent Benchmarks: see what others pay",
+          "Member-only rates from partners",
+          "Discounted consult with our partner lawyers"
+        ],
+        "ctaLabel": "Join as Associate",
+        "ctaHref": "/join",
+        "featured": true
+      },
+      {
+        "name": "Patron",
+        "price": "$999",
+        "per": "a year",
+        "for": "Groups with three or more outlets.",
+        "perks": [
+          "Everything in Associate",
+          "Mentor review on every renewal, across all your outlets",
+          "Quarterly roundtable with the committee",
+          "First access to group-negotiated deals",
+          "Your name on the Patrons wall"
+        ],
+        "ctaLabel": "Become a Patron",
+        "ctaHref": "/join",
+        "featured": false
+      }
     ]
   },
   "businessNetwork": {

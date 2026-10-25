@@ -21,7 +21,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/brand/sgtuff-icon-red.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/brand/sgtuff-icon-red-180.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SGTUFF" />
@@ -30,14 +31,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL(image, Astro.site)} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#e30613" />
+    <meta name="theme-color" content="#FAF7F2" />
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Organization',
       name: SITE.legalName,
       alternateName: 'SGTUFF',
       url: Astro.site?.toString(),
-      logo: new URL('/images/sgtuff-logo.jpg', Astro.site).toString(),
+      logo: new URL('/brand/sgtuff-icon-red-512.png', Astro.site).toString(),
       email: SITE.email,
       telephone: SITE.phone,
       sameAs: SITE.socials.map((s) => s.href),

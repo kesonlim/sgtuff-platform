@@ -9,7 +9,7 @@ const isActive = (href: string) => path === href || path.startsWith(`${href}/`);
 <header class="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85">
   <div class="container-page flex h-[72px] items-center justify-between gap-4">
     <a href="/" class="shrink-0" aria-label="SGTUFF home">
-      <img src="/images/sgtuff-logo.jpg" alt="Singapore Tenants United for Fairness" width="141" height="44" class="h-10 w-auto sm:h-11" />
+      <img src="/brand/sgtuff-wordmark-primary.svg" alt="SGTUFF" width="146" height="28" class="h-7 w-auto" />
     </a>
 
     <nav aria-label="Main" class="hidden lg:block">
@@ -19,18 +19,18 @@ const isActive = (href: string) => path === href || path.startsWith(`${href}/`);
             <a
               href={item.href}
               aria-current={isActive(item.href) ? 'page' : undefined}
-              class="relative rounded-sm px-3 py-2 text-[15px] font-semibold text-foreground no-underline hover:bg-muted hover:text-foreground aria-[current=page]:text-primary-strong aria-[current=page]:after:absolute aria-[current=page]:after:inset-x-3 aria-[current=page]:after:-bottom-[15px] aria-[current=page]:after:h-[3px] aria-[current=page]:after:bg-primary"
+              class="rounded-md px-3 py-2 text-[15px] font-medium text-foreground no-underline hover:text-primary-strong aria-[current=page]:text-primary-strong"
             >{item.label}</a>
           </li>
         ))}
         <li>
-          <a href={SITE.trackerUrl} class="rounded-sm px-3 py-2 text-[15px] font-semibold text-foreground no-underline hover:bg-muted hover:text-foreground">Tracker ↗</a>
+          <a href={SITE.trackerUrl} class="rounded-md px-3 py-2 text-[15px] font-medium text-foreground no-underline hover:text-primary-strong">Tracker ↗</a>
         </li>
       </ul>
     </nav>
 
     <div class="flex items-center gap-2">
-      <a href={SITE.memberLoginUrl} class={buttonVariants({ variant: 'ghost', size: 'sm', className: 'hidden sm:inline-flex' })}>Member login</a>
+      <a href={SITE.memberLoginUrl} class={buttonVariants({ variant: 'ghost', size: 'sm', className: 'hidden font-medium sm:inline-flex' })}>Log in</a>
       <a href="/join" class={buttonVariants({ size: 'sm' })}>Join</a>
       <button
         type="button"
@@ -38,7 +38,7 @@ const isActive = (href: string) => path === href || path.startsWith(`${href}/`);
         aria-expanded="false"
         aria-controls="mobile-menu"
         aria-label="Open menu"
-        class="inline-flex size-11 items-center justify-center rounded-sm text-foreground hover:bg-muted lg:hidden"
+        class="inline-flex size-11 items-center justify-center rounded-md text-foreground hover:bg-muted lg:hidden"
       >
         <Menu className="size-6 [[aria-expanded=true]>&]:hidden" aria-hidden="true" />
         <X className="hidden size-6 [[aria-expanded=true]>&]:block" aria-hidden="true" />
@@ -50,11 +50,11 @@ const isActive = (href: string) => path === href || path.startsWith(`${href}/`);
     <ul class="container-page flex flex-col py-2">
       {NAV.map((item) => (
         <li>
-          <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined} class="block border-b border-border py-4 font-display text-xl font-extrabold uppercase text-foreground no-underline aria-[current=page]:text-primary-strong">{item.label}</a>
+          <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined} class="block border-b border-border py-4 font-display text-2xl font-bold text-foreground no-underline aria-[current=page]:text-primary-strong">{item.label}</a>
         </li>
       ))}
-      <li><a href={SITE.trackerUrl} class="block border-b border-border py-4 font-display text-xl font-extrabold uppercase text-foreground no-underline">Retail Tracker ↗</a></li>
-      <li><a href={SITE.memberLoginUrl} class="block py-4 font-semibold text-foreground no-underline">Member login</a></li>
+      <li><a href={SITE.trackerUrl} class="block border-b border-border py-4 font-display text-2xl font-bold text-foreground no-underline">Retail Tracker ↗</a></li>
+      <li><a href={SITE.memberLoginUrl} class="block py-4 font-semibold text-foreground no-underline">Member log-in</a></li>
     </ul>
   </nav>
 </header>

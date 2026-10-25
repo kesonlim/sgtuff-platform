@@ -5,11 +5,37 @@
   "mallsTracked": 22,
   "trackerUrl": "https://tracker.sgtuff.org.sg",
   "memberLoginUrl": "https://sgtuff.eber.co/sign-in",
-  "mission": "SGTUFF is an advocate for local SME frontline businesses in retail, F&B and services, focusing on fair tenancy and manpower issues.",
+  "mission": "SGTUFF is the co-operative owned by Singapore's frontline businesses. We make sure tenants have a voice when leasing rules are written, and we pool our scale so members are stronger together.",
   "socials": [
-    { "label": "Facebook", "href": "https://www.facebook.com/groups/SGtenantsUNITEDforFairness/" },
-    { "label": "Instagram", "href": "https://www.instagram.com/sg.tenants.united.for.fairness/" },
-    { "label": "LinkedIn", "href": "https://www.linkedin.com/company/sgtuff/" },
-    { "label": "TikTok", "href": "https://www.tiktok.com/@sgtuff2020" }
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/groups/SGtenantsUNITEDforFairness/"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/sg.tenants.united.for.fairness/"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/company/sgtuff/"
+    },
+    {
+      "label": "TikTok",
+      "href": "https://www.tiktok.com/@sgtuff2020"
+    }
+  ],
+  "stats": {
+    "owners": "700+",
+    "brands": "600+",
+    "outlets": "2,600+",
+    "asOf": "Oct 2026"
+  },
+  "workWith": [
+    "Singapore Retailers Association",
+    "Restaurant Association of Singapore",
+    "ASME",
+    "Singapore Business Federation",
+    "Franchising and Licensing Association",
+    "Singapore National Co-operative Federation"
   ]
 }

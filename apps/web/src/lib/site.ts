@@ -5,7 +5,9 @@ import pages from '@/data/pages.json';
 export const SITE = {
   ...site,
   name: 'SGTUFF',
-  legalName: 'Singapore Tenants United for Fairness Co-operative Ltd',
+  legalName: 'SGTUFF Co-operative Limited',
+  uen: 'T21CS0006H',
+  address: '178 Paya Lebar Road #02-11, Singapore 409030',
   regNo: 'CS000438',
   turnstileSiteKey: import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '1x00000000000000000000AA',
 };
@@ -14,10 +16,9 @@ export const SITE = {
 export const PAGES = pages;
 
 export const NAV = [
-  { label: 'About', href: '/about-us' },
+  { label: 'Our Story', href: '/about-us' },
   { label: 'Fair Tenancy', href: '/fair-tenancy' },
   { label: 'Membership', href: '/membership' },
-  { label: 'Network', href: '/business-network' },
+  { label: 'Partners', href: '/collaborate' },
   { label: 'News', href: '/latest-news' },
-  { label: 'Collaborate', href: '/collaborate' },
 ] as const;
