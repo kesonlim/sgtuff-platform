@@ -15,4 +15,6 @@ This repo holds SGTUFF's web apps, including the new www.sgtuff.org.sg site in `
 - Terence Yow is Chairman and holds the Fair Tenancy Industry Committee appointment.
 - SGTUFF is a registered co-operative society, not a statutory body. Do not claim official ministry partnerships.
 - Legal details: SGTUFF Co-operative Limited, UEN T21CS0006H, registered address 178 Paya Lebar Road #02-11, Singapore 409030. Registered 7 Jan 2021 (Registry of Co-operative Societies list). Domain: sgtuff.org.sg.
+- Phone on all materials: +65 8845 6623 (WhatsApp). Do not use the registry office line.
+- Dates: say "owner-run since February 2020" in everyday copy; formal documents also say "registered as a co-operative in 2021".
 - Member count: use only this baseline, verbatim: "Representing 700+ frontline business owners, 600+ brands and 2,600+ outlets across Singapore (as of Oct 2026)." Always show the "as of" date. Do not use the older 1,000+ figure.
