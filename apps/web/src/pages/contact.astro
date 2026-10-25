@@ -14,7 +14,7 @@ import { PAGES, SITE } from '@/lib/site';
       <a href={`tel:${SITE.phone.replace(/\s/g, '')}`} class="flex items-center gap-3 text-lg font-semibold"><Phone className="size-5 text-primary" aria-hidden="true" />{SITE.phone}</a>
       <p class="text-body">{SITE.legalName}<br />UEN {SITE.uen}<br />{SITE.address}</p>
     </div>
-    <div class="rounded-md border-2 border-foreground p-6 sm:p-8">
+    <div class="rounded-md border border-border bg-surface p-6 sm:p-8">
       <LeadForm
         client:load
         endpoint="/api/contact"

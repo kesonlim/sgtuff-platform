@@ -32,7 +32,7 @@ const objectives = [
       <ol class="grid gap-6 md:grid-cols-2">
         {objectives.map((o, i) => (
           <li class="flex gap-5 border-t-4 border-foreground pt-5">
-            <span class="font-display text-3xl font-black text-primary">{String(i + 1).padStart(2, '0')}</span>
+            <span class="font-display text-3xl font-extrabold text-primary">{String(i + 1).padStart(2, '0')}</span>
             <span class="text-lg text-body">{o}</span>
           </li>
         ))}

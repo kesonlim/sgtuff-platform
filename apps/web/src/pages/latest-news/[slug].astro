@@ -18,7 +18,7 @@ const date = post.data.date.toLocaleDateString('en-SG', { day: 'numeric', month:
       <div class="container-page flex max-w-3xl flex-col gap-4 py-14 sm:py-20">
         <a href="/latest-news" class="eyebrow self-start no-underline">← All news</a>
         <p class="eyebrow text-primary-strong">{post.data.category} · <time datetime={post.data.date.toISOString()}>{date}</time></p>
-        <h1 class="font-display text-4xl font-black leading-[1.05] sm:text-5xl">{post.data.title}</h1>
+        <h1 class="font-display text-4xl font-extrabold leading-[1.05] sm:text-5xl">{post.data.title}</h1>
       </div>
     </header>
     <div class="container-page max-w-3xl py-14">

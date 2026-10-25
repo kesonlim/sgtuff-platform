@@ -56,7 +56,7 @@ const heroShots = [
     <div class="grid grid-cols-[1.2fr_1fr] grid-rows-[180px_180px] gap-3 sm:grid-rows-[240px_240px] sm:gap-4">
       {heroShots.map((s) => (
         <figure class:list={['relative m-0 flex items-center justify-center overflow-hidden rounded-md bg-photo', s.span && 'row-span-2']}>
-          <span class="px-4 text-center text-[13px] text-muted-foreground">Member photo<br />{s.label}</span>
+          <span class="px-4 text-center text-[13px] text-body">Member photo<br />{s.label}</span>
           <figcaption class="absolute bottom-3 left-3 hidden rounded-[8px] bg-background px-3 py-1.5 text-[13px] text-muted-foreground sm:block">Coming soon: a real member</figcaption>
         </figure>
       ))}
@@ -155,7 +155,7 @@ const heroShots = [
       <div class="grid gap-6 md:grid-cols-3">
         {[1, 2, 3].map(() => (
           <figure class="m-0 flex flex-col gap-4">
-            <div class="flex aspect-[4/3] items-center justify-center rounded-md bg-photo text-[14px] text-muted-foreground">Member photo, in their shop</div>
+            <div class="flex aspect-[4/3] items-center justify-center rounded-md bg-photo text-[14px] text-body">Member photo, in their shop</div>
             <figcaption class="text-[14px] text-muted-foreground">Member stories are coming soon. <a href="/join">Join to be featured.</a></figcaption>
           </figure>
         ))}
@@ -215,7 +215,7 @@ const heroShots = [
     <div class="container-page flex flex-col items-start justify-between gap-8 py-16 md:flex-row md:items-center lg:py-20">
       <div class="flex flex-col gap-3">
         <h2 class="font-display text-[40px] font-extrabold leading-none tracking-[-0.02em] sm:text-6xl">No tenant negotiates alone.</h2>
-        <p class="text-xl">Join {SITE.stats.owners} owners who have each other's backs.</p>
+        <p class="text-xl font-bold">Join {SITE.stats.owners} owners who have each other's backs.</p>
       </div>
       <a href="/join" class="inline-flex h-14 items-center rounded-md bg-foreground px-8 text-lg font-semibold text-background no-underline hover:bg-[#2B2D31] hover:text-background">Join the co-op</a>
     </div>
