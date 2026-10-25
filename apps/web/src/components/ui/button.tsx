@@ -19,9 +19,9 @@ const baseVariants = cva(
         lg: 'h-14 px-7 text-lg',
       },
     },
-    // White on TUFF Red passes contrast only at 18px+, so red buttons never go smaller.
+    // White on TUFF Red (4.2:1) passes WCAG AA only as large text: 19px+ bold (brand guide 6.3).
     compoundVariants: [
-      { variant: 'primary', size: ['sm', 'md'], class: 'text-lg' },
+      { variant: 'primary', size: ['sm', 'md', 'lg'], class: 'text-[19px] font-bold' },
     ],
     defaultVariants: { variant: 'primary', size: 'md' },
   },
